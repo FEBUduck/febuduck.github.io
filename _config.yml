@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: FEBU Ducks
 
 # Your name to show in the footer
-author: Some Person
+author: Nick
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://FEBUDucks.com"
 
 ################
 # --- Logo --- #
