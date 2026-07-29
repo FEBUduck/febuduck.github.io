@@ -52,12 +52,13 @@ round-avatar: true
 social-network-links:
   email: "contact@febuducks.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
+#  facebook: deanattali
+#  github: daattali
   twitter: daattali
-  patreon: DeanAttali
+#  patreon: DeanAttali
   youtube: "@daattali"
-  whatsapp: 15551212
+#  whatsapp: 15551212
+  discord: "za5cXbukqf"
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
@@ -128,7 +129,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+#keywords: "Oregon Ducks Fans, Ducks Fan Site, FEBU , FEBU Shield, Duck Foot , Oregon Sports, Oregon Athletics, Ducks Community, Ducks , Ducks ,FEBUDucks ,  Oregon Duck Culture, Ducks Merchandise, Ducks Graphics, Ducks , FEBU , FEBU Branding, Oregon Fanbase, College Football Ducks, B1G Ducks, Oregon Ducks Identity "
 
 ######################################
 # --- Colours / background image --- #
