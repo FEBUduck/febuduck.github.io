@@ -54,9 +54,9 @@ social-network-links:
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
 #  github: daattali
-  twitter: daattali
+#  twitter: daattali
 #  patreon: DeanAttali
-  youtube: "@daattali"
+#  youtube: "@daattali"
 #  whatsapp: 15551212
   discord: "za5cXbukqf"
 #  medium: yourname
@@ -87,7 +87,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: This website the home of FEBU Ducks
 
 ###########################
 # --- General options --- #
@@ -121,7 +121,7 @@ feed_show_tags: true
 post_search: true
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
-edit_page_button: true
+edit_page_button: false
 
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
