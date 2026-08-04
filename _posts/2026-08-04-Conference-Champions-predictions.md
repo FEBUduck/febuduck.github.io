@@ -19,3 +19,12 @@ The college football season is finally here, bringing fresh energy, new storylin
 ### Submit Your Conference Champion Prediction
 
 Below is the form where you can enter your pick for this year's conference winner.
+<iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLScqN0mFiCi_MAEx7-bJHgtq12PITV7Xdtw_nEDqSwFvVKxP7Q/viewform?embedded=true" 
+    width="100%" 
+    height="900" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0">
+Loading…
+</iframe>
