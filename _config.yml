@@ -22,7 +22,7 @@ author: HighFi
 navbar-links:
   About: "aboutme"
   Resources:
-    - Standings: "https://beautifuljekyll.com"
+    - Standings: "standings"
     - Rules: "rules"
   Our home: "https://FEBUDucks.com"
 
