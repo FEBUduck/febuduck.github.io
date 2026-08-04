@@ -3,7 +3,7 @@ layout: post
 title: Conference Champions Predictions
 subtitle: Let's start the game!
 gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
+gh-badge: []
 tags: [FEBU, Predictions, Conference]
 comments: true
 mathjax: true
