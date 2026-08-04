@@ -2,6 +2,8 @@
 layout: post
 title: Welcome to Our Corner of Chaos
 subtitle:  A small community of loud fans, weekly predictions, and pure college football nonsense.
+cover-img: /assets/img/o,g.png
+thumbnail-img: /assets/img/thumb.png
 gh-repo: daattali/beautiful-jekyll
 gh-badge: []
 tags: [FEBU, Welcome, About, New]
