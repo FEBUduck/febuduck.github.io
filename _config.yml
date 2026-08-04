@@ -23,7 +23,7 @@ navbar-links:
   About: "aboutme"
   Resources:
     - Standings: "https://beautifuljekyll.com"
-    - Rules: "https://www.markdowntutorial.com/"
+    - Rules: "rules"
   Our home: "https://FEBUDucks.com"
 
 ################
