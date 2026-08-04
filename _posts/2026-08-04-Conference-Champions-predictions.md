@@ -9,3 +9,13 @@ comments: true
 mathjax: true
 author: HighFi
 ---
+
+## Welcome to a New Season
+
+The college football season is finally here, bringing fresh energy, new storylines, and plenty of bold predictions. This page is where you cast your pick for who will take home the conference crown. Lock in your champion and follow along as the season unfolds.
+
+---
+
+### Submit Your Conference Champion Prediction
+
+Below is the form where you can enter your pick for this year's conference winner.
