@@ -28,3 +28,17 @@ Below is the form where you can enter your pick for this year's conference winne
     marginwidth="0">
 Loading…
 </iframe>
+
+---
+
+### Current Submissions
+
+<div class="contact-wrapper">
+  <iframe 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUJHRYX3chTrLeCHP_ksqVtITkqY2pzwQlfu5d_KhJ4wH6RJ7uuB2-uI5ZcZ1bA_oLyLcCnmGn8JA9/pubhtml?gid=1501942166&single=true"
+    width="100%" 
+    height="700"
+    style="border: none;">
+  </iframe>
+</div>
+
