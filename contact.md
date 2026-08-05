@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 🦆 About FEBU Ducks
-subtitle: Fans first. Ducks always.
+title: Contact Us
+subtitle: Send a question or comment
 ---
 
 <form action="https://formspree.io/f/mjybvgrl" method="POST">
