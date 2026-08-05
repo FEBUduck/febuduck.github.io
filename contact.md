@@ -12,6 +12,8 @@ subtitle: Send a question or comment
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   font-family: system-ui, sans-serif;
+
+  border-left: 6px solid #154734;
 }
 
 .contact-wrapper label {
@@ -33,7 +35,7 @@ subtitle: Send a question or comment
 .contact-wrapper button {
   width: 100%;
   padding: 12px;
-  background: #1a73e8;
+  background: #154734;  /*Ducks green */
   color: white;
   border: none;
   border-radius: 8px;
@@ -43,7 +45,7 @@ subtitle: Send a question or comment
 }
 
 .contact-wrapper button:hover {
-  background: #155fc2;
+  background: #0f3528;
 }
 </style>
 
