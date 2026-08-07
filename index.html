@@ -9,18 +9,46 @@ subtitle: All Ducks All Day, Everyday.
 fetch('/assets/data/next-game.json')
   .then(response => response.json())
   .then(game => {
+
+    function updateCountdown() {
+      const kickoff = new Date(game.kickoff + " PST");
+      const now = new Date();
+      const diff = kickoff - now;
+
+      if (diff <= 0) {
+        return "GAME DAY!";
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+      return `${days}d ${hours}h ${minutes}m`;
+    }
+
     const widget = `
       <div class="scoreboard-widget">
+        <div class="sb-countdown">
+          Kickoff in: <span id="kickoff-timer">${updateCountdown()}</span>
+        </div>
+
         <div class="sb-header">OREGON vs ${game.opponent}</div>
+
         <div class="sb-details">
           <p><strong>Date:</strong> ${game.date} — ${game.time}</p>
           <p><strong>TV:</strong> ${game.tv}</p>
           <p><strong>Oregon Record:</strong> ${game.oregonRecord}</p>
           <p><strong>${game.opponent} Record:</strong> ${game.opponentRecord}</p>
-          <p><strong>FEBU Prediction:</strong> ${game.prediction}</p>
+          <p><strong>FEBU Spread:</strong> ${game.spread}</p>
         </div>
       </div>
     `;
+
     document.getElementById('scoreboard-widget').innerHTML = widget;
+
+    setInterval(() => {
+      document.getElementById('kickoff-timer').innerText = updateCountdown();
+    }, 60000); // update every minute
   });
 </script>
+
