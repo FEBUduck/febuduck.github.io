@@ -92,8 +92,11 @@ function updateChaosMeter() {
   const fill = document.getElementById("chaos-fill");
   const percent = document.getElementById("chaos-percent");
 
-  fill.style.width = chaos + "%";
-  percent.innerText = chaos + "%";
+  let displayChaos = Math.max(42, chaos);
+
+fill.style.width = displayChaos + "%";
+percent.innerText = displayChaos + "%";
+
 
   // Flash at 100%
   if (chaos >= 100) {
