@@ -172,29 +172,39 @@
     {% endfor %}
   {% endif %}
 
-  <style>
-    .scoreboard-widget {
-      max-width: 500px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background: #ffffff;
-      border-left: 6px solid #154734; /* Ducks green */
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      font-family: Arial, sans-serif;
-    }
+ <style>
+.scoreboard-widget {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-left: 6px solid #154734; /* Ducks green */
+  border-radius: 12px;
+  box-shadow: 
+    0 0 12px rgba(21, 71, 52, 0.4),   /* outer glow */
+    0 0 4px rgba(21, 71, 52, 0.6) inset; /* inner glow */
+  font-family: Arial, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
 
-    .sb-header {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #154734;
-      margin-bottom: 1rem;
-    }
+.scoreboard-widget:hover {
+  box-shadow:
+    0 0 18px rgba(21, 71, 52, 0.6),
+    0 0 6px rgba(21, 71, 52, 0.7) inset;
+}
 
-    .sb-details p {
-      margin: 0.3rem 0;
-    }
-  </style>
+.sb-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #154734;
+  margin-bottom: 1rem;
+}
+
+.sb-details p {
+  margin: 0.3rem 0;
+}
+</style>
+  
 </head>
 
  
