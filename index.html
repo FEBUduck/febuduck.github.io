@@ -70,6 +70,41 @@ fetch('/assets/data/next-game.json')
     setInterval(() => {
       document.getElementById('kickoff-timer').innerText = updateCountdown();
     }, 60000); // update every minute
+
+    // --- CHAOS METER LOGIC ---
+function updateChaosMeter() {
+  const kickoff = new Date(game.kickoff + " PST");
+  const now = new Date();
+
+  // 30-day window before kickoff
+  const total = kickoff - new Date(
+    kickoff.getFullYear(),
+    kickoff.getMonth(),
+    kickoff.getDate() - 30
+  );
+
+  const remaining = kickoff - now;
+
+  // Convert remaining time into a % (0 → 100)
+  let chaos = 100 - Math.max(0, Math.min(100, (remaining / total) * 100));
+  chaos = Math.round(chaos);
+
+  const fill = document.getElementById("chaos-fill");
+  const percent = document.getElementById("chaos-percent");
+
+  fill.style.width = chaos + "%";
+  percent.innerText = chaos + "%";
+
+  // Flash at 100%
+  if (chaos >= 100) {
+    fill.classList.add("chaos-flash");
+  }
+}
+
+// Update chaos meter every minute
+setInterval(updateChaosMeter, 60000);
+updateChaosMeter();
+
   });
 </script>
 
