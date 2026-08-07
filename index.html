@@ -54,6 +54,13 @@ fetch('/assets/data/next-game.json')
           <p><strong>Oregon Record:</strong> ${game.oregonRecord}</p>
           <p><strong>${game.opponent} Record:</strong> ${game.opponentRecord}</p>
           <p><strong>FEBU Spread:</strong> ${game.spread}</p>
+          <div class="chaos-meter-container">
+  <div class="chaos-meter-bar">
+    <div class="chaos-meter-fill" id="chaos-fill"></div>
+  </div>
+  <div class="chaos-meter-percent" id="chaos-percent">0%</div>
+</div>
+
         </div>
       </div>
     `;
