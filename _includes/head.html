@@ -243,6 +243,49 @@
   to {
     text-shadow: 0 0 18px #e6b400;
   }
+
+    /* --- Minimal Chaos Meter --- */
+.chaos-meter-container {
+  margin-top: 0.5rem;
+}
+
+.chaos-meter-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(21, 71, 52, 0.25); /* faint Ducks green */
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(21, 71, 52, 0.4);
+}
+
+.chaos-meter-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #154734, #1faa59, #e6b400);
+  box-shadow: 0 0 8px rgba(21, 71, 52, 0.7);
+  transition: width 1s linear;
+}
+
+.chaos-meter-percent {
+  font-size: 0.8rem;
+  color: #154734;
+  margin-top: 0.2rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Flashing at 100% */
+.chaos-flash {
+  animation: chaosPulse 2s infinite alternate;
+}
+
+@keyframes chaosPulse {
+  from {
+    box-shadow: 0 0 8px rgba(21, 71, 52, 0.7);
+  }
+  to {
+    box-shadow: 0 0 16px rgba(21, 71, 52, 1);
+  }
 }
 </style>
 
