@@ -33,9 +33,15 @@ fetch('/assets/data/next-game.json')
         </div>
 
         <div class="sb-header-row">
-  <div class="sb-header">OREGON vs ${game.opponent}</div>
-  <img class="sb-logo" src="${game.opponentLogo}" alt="${game.opponent} logo">
+  <img class="sb-logo-left" src="${game.oregonLogo}" alt="Oregon logo">
+
+  <div class="sb-header-center">
+    OREGON vs ${game.opponent}
+  </div>
+
+  <img class="sb-logo-right" src="${game.opponentLogo}" alt="${game.opponent} logo">
 </div>
+
 
 
         <div class="sb-details">
