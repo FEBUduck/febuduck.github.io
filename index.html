@@ -32,7 +32,11 @@ fetch('/assets/data/next-game.json')
           Kickoff in: <span id="kickoff-timer">${updateCountdown()}</span>
         </div>
 
-        <div class="sb-header">OREGON vs ${game.opponent}</div>
+        <div class="sb-header-row">
+  <div class="sb-header">OREGON vs ${game.opponent}</div>
+  <img class="sb-logo" src="${game.opponentLogo}" alt="${game.opponent} logo">
+</div>
+
 
         <div class="sb-details">
           <p><strong>Date:</strong> ${game.date} — ${game.time}</p>
