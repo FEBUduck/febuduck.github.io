@@ -3,3 +3,24 @@ layout: home
 title: FEBU
 subtitle: All Ducks All Day, Everyday.
 ---
+<div id="scoreboard-widget"></div>
+
+<script>
+fetch('/assets/data/next-game.json')
+  .then(response => response.json())
+  .then(game => {
+    const widget = `
+      <div class="scoreboard-widget">
+        <div class="sb-header">OREGON vs ${game.opponent}</div>
+        <div class="sb-details">
+          <p><strong>Date:</strong> ${game.date} — ${game.time}</p>
+          <p><strong>TV:</strong> ${game.tv}</p>
+          <p><strong>Oregon Record:</strong> ${game.oregonRecord}</p>
+          <p><strong>${game.opponent} Record:</strong> ${game.opponentRecord}</p>
+          <p><strong>FEBU Prediction:</strong> ${game.prediction}</p>
+        </div>
+      </div>
+    `;
+    document.getElementById('scoreboard-widget').innerHTML = widget;
+  });
+</script>
