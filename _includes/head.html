@@ -205,19 +205,47 @@
 }
 </style>
   <style>
+/* --- Dual Logo Row --- */
 .sb-header-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.sb-logo {
+.sb-logo-left,
+.sb-logo-right {
   width: 64px;
   height: 64px;
   object-fit: contain;
 }
+
+/* Centered matchup text */
+.sb-header-center {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #154734;
+  text-align: center;
+}
+
+/* --- GAME DAY Flash Animation --- */
+.gameday-flash {
+  animation: gamedayPulse 1s infinite alternate;
+  color: #e6b400; /* Ducks gold */
+  font-weight: bold;
+}
+
+@keyframes gamedayPulse {
+  from {
+    text-shadow: 0 0 8px #e6b400;
+  }
+  to {
+    text-shadow: 0 0 18px #e6b400;
+  }
+}
 </style>
+
 
   
 </head>
