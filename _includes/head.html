@@ -172,19 +172,28 @@
     {% endfor %}
   {% endif %}
 
- <style>
+<style>
 .scoreboard-widget {
   max-width: 500px;
   margin: 2rem auto;
   padding: 1.5rem;
   background: #ffffff;
-  border-left: 6px solid #154734; /* Ducks green */
+  border-left: 6px solid #154734;
   border-radius: 12px;
   box-shadow: 
-    0 0 12px rgba(21, 71, 52, 0.4),   /* outer glow */
-    0 0 4px rgba(21, 71, 52, 0.6) inset; /* inner glow */
+    0 0 12px rgba(21, 71, 52, 0.4),
+    0 0 4px rgba(21, 71, 52, 0.6) inset;
   font-family: Arial, sans-serif;
   transition: box-shadow 0.3s ease;
+}
+
+/* Center + Glow the countdown */
+.sb-countdown {
+  text-align: center;
+  font-weight: bold;
+  color: #154734; /* Ducks green */
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px rgba(21, 71, 52, 0.4); /* subtle Ducks glow */
 }
 
 .scoreboard-widget:hover {
@@ -204,6 +213,7 @@
   margin: 0.3rem 0;
 }
 </style>
+
   <style>
 /* --- Dual Logo Row --- */
 .sb-header-row {
