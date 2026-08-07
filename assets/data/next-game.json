@@ -1,9 +1,10 @@
 {
-  "opponent": "Texas Tech",
-  "date": "Saturday, Sept 14",
-  "time": "7:30 PM",
-  "tv": "ESPN",
-  "oregonRecord": "1–0",
-  "opponentRecord": "1–0",
-  "prediction": "Oregon 38–27"
+  "kickoff": "2026-09-05 12:30:00",
+  "opponent": "Boise State",
+  "date": "Saturday, Sept 5",
+  "time": "12:30 PM",
+  "tv": "CBS",
+  "oregonRecord": "0–0",
+  "opponentRecord": "0–0",
+  "spread": "Oregon -24.5"
 }
