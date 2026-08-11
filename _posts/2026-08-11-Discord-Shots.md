@@ -20,7 +20,7 @@ Here lies a lovingly preserved bundle of Discord Shots. A chaotic mix of stat gu
 ### Discord Posts
 
 #### Niraj - Jalen Lott to the House
-![Lott](https://FEBUDucks.com/assets/img/lott.jpg)
+![Lott](https://FEBUDucks.com/assets/img/Lott.jpg)
 
 #### Jev & Sco - Starting Offensive Linemen
 ![Crepe](https://FEBUDucks.com/assets/img/oline.jpg)
