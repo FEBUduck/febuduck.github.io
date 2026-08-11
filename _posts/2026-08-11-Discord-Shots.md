@@ -12,12 +12,10 @@ mathjax: true
 author: HighFi
 ---
 
-## 🏈 Welcome to the Madness
+## Shots time
 
-Every year we make predictions. Every year those predictions betray us.
-So this time, instead of pretending we know what we’re talking about, we’re preserving the chaos exactly as it was posted — unedited, unfiltered, and ready to be laughed at when the season inevitably goes sideways.
+Here lies a lovingly preserved bundle of Discord Shots. A chaotic mix of stat guesses , bold prophecies, and random season happenings foretold by our resident genie's. No edits, no corrections, no mercy. These predictions are being preserved so we can look back , laugh, cringe , and marvel at the confidence we had. Consider this our little oracle archive: a place where every wild take, every “trust me bro” stat line, and every cosmic gut feeling gets to live untouched until the football gods reveal which of us were visionaries… and which of us were just vibing.
 
-Below is a collection of preseason takes, bold calls, and pure nonsense straight from the Discord server. These are the receipts. These are the shots. These are the moments we’ll revisit in November and wonder what we were thinking.
 
 ### Discord Posts
 
