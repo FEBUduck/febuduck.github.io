@@ -3,7 +3,7 @@ layout: post
 title: Discord Shots
 subtitle:  Predictions from the Discord server
 cover-img: /assets/img/ShotsBanner.png
-thumbnail-img: /assets/img/Geeni.png
+thumbnail-img: /assets/img/geeni.png
 gh-repo: daattali/beautiful-jekyll
 gh-badge: []
 tags: [FEBU, Discorde, Shots, Receipts]
