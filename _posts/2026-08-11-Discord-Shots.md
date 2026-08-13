@@ -28,6 +28,11 @@ Here lies a lovingly preserved bundle of Discord Shots. A chaotic mix of stat gu
 #### Sco - Crader gives 15
 ![Crepe](https://FEBUDucks.com/assets/img/crader.jpg)
 
-
 #### Jev - Dutch gonna ball
 ![Crepe](https://FEBUDucks.com/assets/img/dutch.jpg)
+
+#### HighFi - Davison for 1k
+![Crepe](https://FEBUDucks.com/assets/img/davison1k.jpg)
+
+#### GMayne4th - Dierre and Jordon top 3 in B1G
+![Crepe](https://FEBUDucks.com/assets/img/top3.jpg)
