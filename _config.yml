@@ -21,8 +21,9 @@ author: HighFi
 
 navbar-links:
   About: "aboutme"
-  Resources:
+  FEBU Hub:
     - Standings: "standings"
+    - Discord Shotss: "https://febuducks.com/2026-08-11-Discord-Shots/"
     - Rules: "rules"
     - Contact Us: "contact"
   Our home: "https://discord.gg/x8k4z9pMYt"
