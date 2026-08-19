@@ -23,16 +23,20 @@ Here lies a lovingly preserved bundle of Discord Shots. A chaotic mix of stat gu
 ![Lott](https://FEBUDucks.com/assets/img/Lott.jpg)
 
 #### Jev & Sco - Starting Offensive Linemen
-![Crepe](https://FEBUDucks.com/assets/img/oline.jpg)
+![Oline](https://FEBUDucks.com/assets/img/oline.jpg)
 
 #### Sco - Crader gives 15
-![Crepe](https://FEBUDucks.com/assets/img/crader.jpg)
+![Crader](https://FEBUDucks.com/assets/img/crader.jpg)
 
 #### Jev - Dutch gonna ball
-![Crepe](https://FEBUDucks.com/assets/img/dutch.jpg)
+![Dutch](https://FEBUDucks.com/assets/img/dutch.jpg)
 
 #### HighFi - Davison for 1k
-![Crepe](https://FEBUDucks.com/assets/img/davison1k.jpg)
+![Davison1k](https://FEBUDucks.com/assets/img/davison1k.jpg)
 
 #### GMayne4th - Dierre and Jordon top 3 in B1G
-![Crepe](https://FEBUDucks.com/assets/img/top3.jpg)
+![TopRBs](https://FEBUDucks.com/assets/img/top3.jpg)
+
+#### Sco - JMac leads the way!
+![JMAc](https://FEBUDucks.com/assets/img/jmaclead.jpg)
+
