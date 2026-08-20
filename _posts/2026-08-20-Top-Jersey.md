@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The only Oregon Ducks jersey rankings that matter
+title: Jersey rankings that matter
 subtitle:  FEBU Presents HighFi ranking jerseys
 cover-img: /assets/img/jersey.png
 gh-repo: daattali/beautiful-jekyll
