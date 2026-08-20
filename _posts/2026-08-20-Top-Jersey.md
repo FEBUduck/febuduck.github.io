@@ -22,16 +22,16 @@ These combos are ones I like but just missed out on making the list. Still Bold 
  
 2021 vs Colorado 
 The yellow and black is just mean and crisp there’s no green but you don’t really need it.
-![Lott](https://FEBUDucks.com/assets/img/jerseys/21col.jpg)
+![21col](https://FEBUDucks.com/assets/img/jerseys/21col.jpg)
 
 2024 B1G Championship
  I believe this was the first year with this template, the Black jerseys had been worn during the year but the paring with the Green helmet just brought a whole look to them . or was that the win?
  
-![Lott](https://FEBUDucks.com/assets/img/jerseys/24B1G.jpg)
+![24B1G](https://FEBUDucks.com/assets/img/jerseys/24B1G.jpg)
 
 OHANA
 Ohana means family. Family means nobody gets left behind.. We cant leave these off any list enough said
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Ohana.jpg)
+![Ohana](https://FEBUDucks.com/assets/img/jerseys/Ohana.jpg)
 
 ### B-Tier
 
@@ -39,23 +39,23 @@ Let’s get the actual list started. Just because it’s B-tier doesn’t mean t
 
 2014’s  ’94 Throwbacks
 I love these it’s hard to beat a classic throwback and for some people this might their top overall. 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![14th](https://FEBUDucks.com/assets/img/jerseys/14th.jpg)
 
 2015 Rosebowl
 It’s the ROSEBOWL! These were as amazing as the game. Everyone remembers Jemeis famous fumble and the return for the Td , We wont talk about the next game.
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![15rb](https://FEBUDucks.com/assets/img/jerseys/15rb.jpg)
 
 2015 Fighting Ducks vs Michigan State
 Big play VA was dealing! We didn’t pull of the W but these all whites were iconic 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![bpva](https://FEBUDucks.com/assets/img/jerseys/bpva.jpg)
 
 2017 Stomp out Cancer
 Stomp it out , White, Silver and a Duck . These were Flash and sold a good message you can argue with me but these were gorgeous.
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![stomp](https://FEBUDucks.com/assets/img/jerseys/stomp.png)
 
 2011 National Championship
 Dyer was down This was the first time I remember Oregon repping the Volt, back to back losses is probably why we didn’t see much more of the Volt but it looked so good on LaMichael
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![volt](https://FEBUDucks.com/assets/img/jerseys/voltt.jpg)
 
 
 ### A Tier
