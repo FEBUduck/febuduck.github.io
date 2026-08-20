@@ -11,16 +11,6 @@ mathjax: true
 author: HighFi
 ---
 
-title: The only Oregon Ducks jersey rankings that matter
-subtitle:  FEBU Presents HighFi ranking jerseys
-cover-img: /assets/img/jersey.png
-gh-repo: daattali/beautiful-jekyll
-tags: [[FEBU, Jerseys, Fun, Article]
-comments: true
-mathjax: true
-author: HighFi
----
-
 
 #A Ducks fan’s definitive guide to the good, the great, and the grellow.
 
