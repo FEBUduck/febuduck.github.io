@@ -70,27 +70,27 @@ This is where greatness really starts to shine. These are the combos that feel t
 2009 Blackout vs Arizona State
 Blount just came back from suspension and so the Ducks wore all black to ASU’s funeral 
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![masoli](https://FEBUDucks.com/assets/img/jerseys/masoli.jpg)
 
 2010 vs Portland State
 I don’t know why I love these so much the Green and gray combo just looked so good this day 
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![psu](https://FEBUDucks.com/assets/img/jerseys/psu.jpg)
 
 2021 Eggshell
 Some hate these but I cant bring myself to not love them. I really wish I grabbed one of these jerseys.
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![egg](https://FEBUDucks.com/assets/img/jerseys/egg.jpg)
 
 2018 The Duck
 I haven’t mean soul that has anything bad to say about these. Yeah Orange isn’t a school color but how many other teams are changing their jersey to look like College Footballs most iconic Mascto?
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![duck](https://FEBUDucks.com/assets/img/jerseys/duck.png)
 
 2007 Stormtrooper
 As far as I can recall this was the FIRST iteration of the Stormtrooper look and man did I love the diamond plate template too. JStew was a dog.
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![jstew](https://FEBUDucks.com/assets/img/jerseys/jstew.jpg)
 
 
 ### S-Tier
@@ -100,17 +100,17 @@ This is Peak. My top 3 jerseys every other fanbase is jealous of  ESPN and other
 2025 Shoeduck
 The dual winged helmet , the marble, everything about this set is of the Gods I’ve nevber sprinted to the Duckstore website so fast to buy a jersey and pray it arrived before gameday.
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![shoe](https://FEBUDucks.com/assets/img/jerseys/shoe.jpg)
 
-2007 ’98 Throwbacks
+’98 Throwbacks
 I don’t know how they can be both nostalgic and modern at the same time but they pulled it off. Deep green, classic numbers, crisp layout paired with the beautiful retro yellow helmet.  If you find one of these for sale hit your boy up I need one of these jerseys.
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![98](https://FEBUDucks.com/assets/img/jerseys/98.jpg)
 
 2012 Rosebowl
 THE FIRST appearance of Chrome helmets. This game had it all , the last second spike , Chip jumping up and down pointing at a fumble, DAT breaking through the line for 6. All second fiddle to those mirror finished helmets . We started this trend and others are still trying to repoicate it. 
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![chrome](https://FEBUDucks.com/assets/img/jerseys/chrome.jpg)
 
 
 ### Now Time for the trash 
