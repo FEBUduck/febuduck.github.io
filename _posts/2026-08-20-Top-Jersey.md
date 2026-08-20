@@ -1,5 +1,18 @@
 ---
 layout: post
+title: Discord Shots
+subtitle:  Predictions from the Discord server
+cover-img: /assets/img/ShotsBanner.png
+thumbnail-img: /assets/img/geeni.png
+gh-repo: daattali/beautiful-jekyll
+gh-badge: []
+tags: [FEBU, Discorde, Shots, Receipts]
+comments: true
+mathjax: true
+author: HighFi
+---
+---
+layout: post
 title: The only Oregon Ducks jersey rankings that matter
 subtitle:  FEBU Presents HighFi ranking jerseys
 cover-img: /assets/img/jersey.png
