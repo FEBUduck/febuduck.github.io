@@ -17,6 +17,7 @@ author: HighFi
 When you mention the Ducks, the first thing that might pop into your mind is Marcus Mariota, The Duck, or even Autzen itself. But if you’re here at FEBU, you’re in the know. For the casual college football fan, the very first thing they think of will almost always be the jerseys. And honestly, that’s a good thing. Oregon has spent decades building its identity on innovation, flash, and swagger. There isn’t a single weekend where ESPN drops its “Top Uniform Combos” list and Oregon doesn’t show up. Most schools rotate between two basic colors; meanwhile, last season the Ducks didn’t even wear a predominantly yellow jersey. So what am I on about? Well, it’s still technically preseason, and I’m tired of vague X posts and insiders hinting about injuries. I need a distraction — so let’s run through my top jersey combos, a few that deserve to be burned in a fire, and for some reason… a Cal jersey.
 
 ###Just missed the cut
+
 These combos are ones I like but just missed out on making the list. Still Bold and Beautiful you could probably make a real argument to move them up but that’s what the comment section is for. 
  
 2021 vs Colorado 
@@ -32,6 +33,7 @@ Ohana means family. Family means nobody gets left behind.. We cant leave these o
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 ###B-Tier
+
 Let’s get the actual list started. Just because it’s B-tier doesn’t mean these are trash, our B’s are other teams best of all time. These combos are unique and had the others jealous .
 
 2014’s  ’94 Throwbacks
@@ -56,6 +58,7 @@ Dyer was down This was the first time I remember Oregon repping the Volt, back t
 
 
 ###A Tier
+
 This is where greatness really starts to shine. These are the combos that feel timeless the second you see them, the ones you wouldn’t be shocked to see brought back as throwbacks one day. When I fire up College Football 27, these are the jerseys I’m scrolling to immediately for my online games. They’re clean, they’re iconic, and they’re everything Oregon football is supposed to look like
 
 2009 Blackout vs Arizona State
@@ -80,6 +83,7 @@ As far as I can recall this was the FIRST iteration of the Stormtrooper look and
 
 
 ###S-Tier
+
 This is Peak. My top 3 jerseys every other fanbase is jealous of  ESPN and other media spent segment after segment talking about these.  When people talk about Oregon being the .standard bearer for college football uniforms, these are the looks they’re picturing. They’re the ones you show someone who’s never watched a Ducks game and say, “This is what we do.” No debate, no hesitation, no second guessing
 
 2025 Shoeduck
