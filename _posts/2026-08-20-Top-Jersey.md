@@ -22,6 +22,7 @@ These combos are ones I like but just missed out on making the list. Still Bold 
  
 2021 vs Colorado 
 The yellow and black is just mean and crisp there’s no green but you don’t really need it.
+
 ![21col](https://FEBUDucks.com/assets/img/jerseys/21col.jpg)
 
 2024 B1G Championship
@@ -31,6 +32,7 @@ The yellow and black is just mean and crisp there’s no green but you don’t r
 
 OHANA
 Ohana means family. Family means nobody gets left behind.. We cant leave these off any list enough said
+
 ![Ohana](https://FEBUDucks.com/assets/img/jerseys/Ohana.jpg)
 
 ### B-Tier
