@@ -22,15 +22,15 @@ These combos are ones I like but just missed out on making the list. Still Bold 
  
 2021 vs Colorado 
 The yellow and black is just mean and crisp there’s no green but you don’t really need it.
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![Lott](https://FEBUDucks.com/assets/img/jerseys/21col.jpg)
 
 2024 B1G Championship
  I believe this was the first year with this template, the Black jerseys had been worn during the year but the paring with the Green helmet just brought a whole look to them . or was that the win?
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![Lott](https://FEBUDucks.com/assets/img/jerseys/24B1G.jpg)
 
 OHANA
 Ohana means family. Family means nobody gets left behind.. We cant leave these off any list enough said
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![Lott](https://FEBUDucks.com/assets/img/jerseys/Ohana.jpg)
 
 ###B-Tier
 
