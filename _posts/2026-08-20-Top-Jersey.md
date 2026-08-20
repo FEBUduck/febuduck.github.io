@@ -26,6 +26,7 @@ The yellow and black is just mean and crisp there’s no green but you don’t r
 
 2024 B1G Championship
  I believe this was the first year with this template, the Black jerseys had been worn during the year but the paring with the Green helmet just brought a whole look to them . or was that the win?
+ 
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/24B1G.jpg)
 
 OHANA
