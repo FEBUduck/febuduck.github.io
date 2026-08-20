@@ -39,22 +39,27 @@ Let’s get the actual list started. Just because it’s B-tier doesn’t mean t
 
 2014’s  ’94 Throwbacks
 I love these it’s hard to beat a classic throwback and for some people this might their top overall. 
+
 ![14th](https://FEBUDucks.com/assets/img/jerseys/14th.jpg)
 
 2015 Rosebowl
 It’s the ROSEBOWL! These were as amazing as the game. Everyone remembers Jemeis famous fumble and the return for the Td , We wont talk about the next game.
+
 ![15rb](https://FEBUDucks.com/assets/img/jerseys/15rb.jpg)
 
 2015 Fighting Ducks vs Michigan State
 Big play VA was dealing! We didn’t pull of the W but these all whites were iconic 
+
 ![bpva](https://FEBUDucks.com/assets/img/jerseys/bpva.jpg)
 
 2017 Stomp out Cancer
 Stomp it out , White, Silver and a Duck . These were Flash and sold a good message you can argue with me but these were gorgeous.
+
 ![stomp](https://FEBUDucks.com/assets/img/jerseys/stomp.png)
 
 2011 National Championship
 Dyer was down This was the first time I remember Oregon repping the Volt, back to back losses is probably why we didn’t see much more of the Volt but it looked so good on LaMichael
+
 ![volt](https://FEBUDucks.com/assets/img/jerseys/voltt.jpg)
 
 
@@ -64,22 +69,27 @@ This is where greatness really starts to shine. These are the combos that feel t
 
 2009 Blackout vs Arizona State
 Blount just came back from suspension and so the Ducks wore all black to ASU’s funeral 
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 2010 vs Portland State
 I don’t know why I love these so much the Green and gray combo just looked so good this day 
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 2021 Eggshell
 Some hate these but I cant bring myself to not love them. I really wish I grabbed one of these jerseys.
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 2018 The Duck
 I haven’t mean soul that has anything bad to say about these. Yeah Orange isn’t a school color but how many other teams are changing their jersey to look like College Footballs most iconic Mascto?
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 2007 Stormtrooper
 As far as I can recall this was the FIRST iteration of the Stormtrooper look and man did I love the diamond plate template too. JStew was a dog.
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 
@@ -89,14 +99,17 @@ This is Peak. My top 3 jerseys every other fanbase is jealous of  ESPN and other
 
 2025 Shoeduck
 The dual winged helmet , the marble, everything about this set is of the Gods I’ve nevber sprinted to the Duckstore website so fast to buy a jersey and pray it arrived before gameday.
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 2007 ’98 Throwbacks
 I don’t know how they can be both nostalgic and modern at the same time but they pulled it off. Deep green, classic numbers, crisp layout paired with the beautiful retro yellow helmet.  If you find one of these for sale hit your boy up I need one of these jerseys.
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 2012 Rosebowl
 THE FIRST appearance of Chrome helmets. This game had it all , the last second spike , Chip jumping up and down pointing at a fumble, DAT breaking through the line for 6. All second fiddle to those mirror finished helmets . We started this trend and others are still trying to repoicate it. 
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 
@@ -106,12 +119,15 @@ No one likes to do chores but these need to be burned with fire and never mentio
 
 Grellow helmets
 I don’t know what they were smoking when they came up with these but Roboduck can take them and go searching for sasquatch 
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 2017-  Citius Altius Fortius
 I get what they were going for but maybe this should have just been a practice jersey. Blue collar cotton Tshirts are not a jersey template and the only good thing about these jerseys is that no one watched this game
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
 
 California Webfoots
 I don’t know why they decided to wear Cal jerseys to play Washington that year but that game and these jerseys should have burned down with the library in Alexandria . 
+
 ![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
