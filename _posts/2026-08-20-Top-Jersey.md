@@ -120,14 +120,14 @@ No one likes to do chores but these need to be burned with fire and never mentio
 Grellow helmets
 I don’t know what they were smoking when they came up with these but Roboduck can take them and go searching for sasquatch 
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![grellow](https://FEBUDucks.com/assets/img/jerseys/grellow.jpg)
 
 2017-  Citius Altius Fortius
 I get what they were going for but maybe this should have just been a practice jersey. Blue collar cotton Tshirts are not a jersey template and the only good thing about these jerseys is that no one watched this game
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![ucd](https://FEBUDucks.com/assets/img/jerseys/ucd.jpg)
 
 California Webfoots
 I don’t know why they decided to wear Cal jerseys to play Washington that year but that game and these jerseys should have burned down with the library in Alexandria . 
 
-![Lott](https://FEBUDucks.com/assets/img/jerseys/Lott.jpg)
+![webfoot](https://FEBUDucks.com/assets/img/jerseys/webfoot.jpg)
