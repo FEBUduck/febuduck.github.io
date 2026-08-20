@@ -1,15 +1,16 @@
 ---
 layout: post
-title: T
-subtitle:  FEBU Presents: Oregon’s Best, Worst, and Burn‑It‑With‑Fire Jerseys
+title: The only Oregon Ducks jersey rankings that matter
+subtitle:  FEBU Presents HighFi ranking jerseys
 cover-img: /assets/img/jersey.png
 gh-repo: daattali/beautiful-jekyll
 gh-badge: []
-tags: [FEBU, Jerseys, Fun, Article]
+tags: [[FEBU, Jerseys, Fun, Article]
 comments: true
 mathjax: true
 author: HighFi
 ---
+
 
 #A Ducks fan’s definitive guide to the good, the great, and the grellow.
 
