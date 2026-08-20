@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Only Oregon Ducks Jersey Rankings That Matter
+title: T
 subtitle:  FEBU Presents: Oregon’s Best, Worst, and Burn‑It‑With‑Fire Jerseys
 cover-img: /assets/img/jersey.png
 gh-repo: daattali/beautiful-jekyll
