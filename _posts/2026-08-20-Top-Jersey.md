@@ -60,7 +60,7 @@ Stomp it out , White, Silver and a Duck . These were Flash and sold a good messa
 2011 National Championship
 Dyer was down This was the first time I remember Oregon repping the Volt, back to back losses is probably why we didn’t see much more of the Volt but it looked so good on LaMichael
 
-![volt](https://FEBUDucks.com/assets/img/jerseys/voltt.jpg)
+![volt](https://FEBUDucks.com/assets/img/jerseys/volt.jpg)
 
 
 ### A Tier
