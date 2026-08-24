@@ -2,6 +2,8 @@
 layout: post
 title: Week 0 Predictions
 subtitle: It's finally here! The season is starting
+cover-img: /assets/img/w0banner.jpg
+thumbnail-img: /assets/img/w0.png
 gh-repo: daattali/beautiful-jekyll
 gh-badge: []
 tags: [FEBU, Predictions, Week 0]
