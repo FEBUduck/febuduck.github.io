@@ -22,12 +22,4 @@ The college football season is finally here, bringing fresh energy, new storylin
 
 ### Submissions
 
-<div class="contact-wrapper">
-  <iframe 
-    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUJHRYX3chTrLeCHP_ksqVtITkqY2pzwQlfu5d_KhJ4wH6RJ7uuB2-uI5ZcZ1bA_oLyLcCnmGn8JA9/pubhtml?gid=376868827&single=true&widget=true&headers=false"
-    width="100%" 
-    height="700"
-    style="border: none;">
-  </iframe>
-</div>
-
+![CCG](https://FEBUDucks.com/assets/img/preds/CCG.png)
