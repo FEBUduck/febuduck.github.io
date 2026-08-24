@@ -30,6 +30,7 @@ To make things easy, I've included the full Week 0 schedule, complete with times
 | Memphis vs UNLV                            |   10:00 pm  |  FOX  |
 
 
+###Week 0 Predictions
 <iframe 
     src="https://docs.google.com/forms/d/e/1FAIpQLScqN0mFiCi_MAEx7-bJHgtq12PITV7Xdtw_nEDqSwFvVKxP7Q/viewform?embedded=true" 
     width="100%" 
@@ -41,3 +42,8 @@ Loading…
 </iframe>
 
 ###Sco Ducks
+
+
+###Submissions
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUJHRYX3chTrLeCHP_ksqVtITkqY2pzwQlfu5d_KhJ4wH6RJ7uuB2-uI5ZcZ1bA_oLyLcCnmGn8JA9/pubhtml?gid=376868827&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
