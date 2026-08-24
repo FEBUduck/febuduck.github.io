@@ -16,28 +16,17 @@ The college football season is finally here, bringing fresh energy, new storylin
 
 ---
 
-### Submit Your Conference Champion Prediction
+### SUBMISSIONS HAVE CLOSED
 
-Below is the form where you can enter your pick for this year's conference winner.
-<iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLScqN0mFiCi_MAEx7-bJHgtq12PITV7Xdtw_nEDqSwFvVKxP7Q/viewform?embedded=true" 
-    width="100%" 
-    height="900" 
-    frameborder="0" 
-    marginheight="0" 
-    marginwidth="0">
-Loading…
-</iframe>
 
----
 
-### Current Submissions
+### Submissions
 
 <div class="contact-wrapper">
   <iframe 
-    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUJHRYX3chTrLeCHP_ksqVtITkqY2pzwQlfu5d_KhJ4wH6RJ7uuB2-uI5ZcZ1bA_oLyLcCnmGn8JA9/pubhtml?gid=1501942166&single=true"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUJHRYX3chTrLeCHP_ksqVtITkqY2pzwQlfu5d_KhJ4wH6RJ7uuB2-uI5ZcZ1bA_oLyLcCnmGn8JA9/pubhtml?gid=376868827&single=true&widget=true&headers=false"
     width="100%" 
-    height="350"
+    height="700"
     style="border: none;">
   </iframe>
 </div>
