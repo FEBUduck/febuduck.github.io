@@ -10,7 +10,7 @@ mathjax: true
 author: HighFi
 ---
 
-###Week 0 has arrived!
+### Week 0 has arrived!
 
 Week 0 is finally here, and it feels so good to say that football season has officially begun. After months of waiting, arguing, and freaking out over potential injuries , we're back to real games. There is only 1 B1G game this weekend so let's start the season with a refresher on getting our picks in and select from all 8 games. 
 
@@ -30,7 +30,7 @@ To make things easy, I've included the full Week 0 schedule, complete with times
 | Memphis vs UNLV                            |   10:00 pm  |  FOX  |
 
 
-###Week 0 Predictions
+### Week 0 Predictions
 <iframe 
     src="https://docs.google.com/forms/d/e/1FAIpQLScqN0mFiCi_MAEx7-bJHgtq12PITV7Xdtw_nEDqSwFvVKxP7Q/viewform?embedded=true" 
     width="100%" 
@@ -41,7 +41,7 @@ To make things easy, I've included the full Week 0 schedule, complete with times
 Loading…
 </iframe>
 
-###Sco Ducks
+### Sco Ducks
 
 
 ###Submissions
