@@ -18,4 +18,17 @@ Here you’ll find:
 Whether you're fighting for the top spot or just trying not to finish last, this is where the story of the season takes shape. Check back every week to see how the madness unfolds.
 
 
-### 2026 SEASON - NO POINTS YET
+### 2026 SEASON - 
+
+| **Name**           | **Pts** | **Wins** | **Losses** | **Win %** |
+|:------------------:|:-------:|:--------:|:----------:|:---------:|
+| **HighFi**         | 1       | 1        | 0          | 100%      |
+| **AgentPK**        | 1       | 1        | 0          | 100%      |
+| **Granby**         | 1       | 1        | 0          | 100%      |
+| **Sco**            | 1       | 1        | 0          | 100%      |
+| **bold and brash** | 1       | 1        | 0          | 100%      |
+| **talesofderp**    | 1       | 1        | 0          | 100%      |
+| **Tyler**          | 1       | 1        | 0          | 100%      |
+| **Doug**           | 1       | 1        | 0          | 100%      |
+| **DEEZ NUTZ**      | 1       | 1        | 0          | 100%      |
+
