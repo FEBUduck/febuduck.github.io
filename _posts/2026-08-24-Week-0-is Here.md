@@ -32,27 +32,12 @@ To make things easy, I've included the full Week 0 schedule, complete with times
 | Memphis vs UNLV                            |   10:00 pm  |  FOX  |
 
 
-### Week 0 Predictions
-<iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLScqN0mFiCi_MAEx7-bJHgtq12PITV7Xdtw_nEDqSwFvVKxP7Q/viewform?embedded=true" 
-    width="100%" 
-    height="900" 
-    frameborder="0" 
-    marginheight="0" 
-    marginwidth="0">
-Loading…
-</iframe>
 
-### Sco Ducks
+### SUBMISSIONS HAVE CLOSED
+
 
 
 ### Submissions
 
-<div class="contact-wrapper">
-  <iframe 
-    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUJHRYX3chTrLeCHP_ksqVtITkqY2pzwQlfu5d_KhJ4wH6RJ7uuB2-uI5ZcZ1bA_oLyLcCnmGn8JA9/pubhtml?gid=1501942166&single=true"
-      width="100%"
-    height="600"
-    style="border: none;">
-  </iframe>
-</div>
+![CCG](https://FEBUDucks.com/assets/img/preds/week0.png)
+
