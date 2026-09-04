@@ -40,3 +40,5 @@ Here lies a lovingly preserved bundle of Discord Shots. A chaotic mix of stat gu
 #### Sco - JMac leads the way!
 ![JMAc](https://FEBUDucks.com/assets/img/jmaclead.jpg)
 
+#### JStew -  PRedicts success
+![jstew](https://FEBUDucks.com/assets/img/jstew.jpg)
