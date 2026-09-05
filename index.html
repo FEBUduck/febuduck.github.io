@@ -11,7 +11,7 @@ fetch('/assets/data/next-game.json')
   .then(game => {
 
    function updateCountdown() {
-  const kickoff = new Date(game.kickoff + " PST");
+  const kickoff = new Date(game.kickoff + " EST");
   const now = new Date();
   const diff = kickoff - now;
 
@@ -73,7 +73,7 @@ fetch('/assets/data/next-game.json')
 
     // --- CHAOS METER LOGIC ---
 function updateChaosMeter() {
-  const kickoff = new Date(game.kickoff + " PST");
+  const kickoff = new Date(game.kickoff + " EST");
   const now = new Date();
 
   // 30-day window before kickoff
