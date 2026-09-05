@@ -1,12 +1,12 @@
 {
-  "kickoff": "2026-09-05 12:30:00",
-  "opponent": "Boise State",
-  "opponentLogo": "/assets/logos/boise.png",
+  "kickoff": "2026-09-12 12:30:00",
+  "opponent": "Oklahoma State",
+  "opponentLogo": "/assets/logos/OKSU.png",
   "oregonLogo": "/assets/logos/oregon.png",
-  "date": "Saturday, Sept 5",
-  "time": "12:30 PM PST",
-  "tv": "CBS",
-  "oregonRecord": "0–0",
-  "opponentRecord": "0–0",
-  "spread": "Oregon -24.5"
+  "date": "Saturday, Sept 12",
+  "time": "12:30 PM EST",
+  "tv": "ESPN",
+  "oregonRecord": "1–0",
+  "opponentRecord": "0–1",
+  "spread": "Oregon -19.5"
 }
