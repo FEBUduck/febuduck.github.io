@@ -29,9 +29,8 @@ Whether you're fighting for the top spot or just trying not to finish last, this
 | Kellz          | 16  | 16   | 3      | 84%    |
 | Lil Jev        | 16  | 16   | 2      | 89%    |
 | Juicy Booty    | 14  | 14   | 4      | 78%    |
-| JevsStepDaddy  | 14  | 14   | 4      | 78%    |
+| JevsStepDaddy (Agent PK)  | 15  | 15   | 4      | 79%    |
 | Doug           | 2   | 2    | 1      | 67%    |
-| AgentPK        | 1   | 1    | 0      | 100%   |
 | Granby         | 1   | 1    | 0      | 100%   |
 | bold and brash | 1   | 1    | 0      | 100%   |
 | DEEZ NUTZ      | 1   | 1    | 0      | 100%   |
