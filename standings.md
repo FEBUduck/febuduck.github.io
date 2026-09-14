@@ -20,19 +20,19 @@ Whether you're fighting for the top spot or just trying not to finish last, this
 
 ### 2026 SEASON - 
 
-| Name           | Pts | Wins | Losses | Win %  |
-|----------------|-----|------|--------|--------|
-| Tyler*         | 18  | 17   | 2      | 89%    |
-| Sco            | 17  | 17   | 2      | 89%    |
-| talesofderp    | 17  | 17   | 2      | 89%    |
-| HighFi         | 16  | 16   | 3      | 84%    |
-| Kellz          | 16  | 16   | 3      | 84%    |
-| Lil Jev        | 16  | 16   | 2      | 89%    |
-| JevsStepDaddy (Agent PK)  | 15  | 15   | 4      | 79%    |
-| Juicy Booty    | 14  | 14   | 4      | 78%    |
-| Doug           | 2   | 2    | 1      | 67%    |
-| Granby         | 1   | 1    | 0      | 100%   |
-| bold and brash | 1   | 1    | 0      | 100%   |
-| DEEZ NUTZ      | 1   | 1    | 0      | 100%   |
-| Gemini AI      | 1   | 1    | 0      | 100%   |
-| xion1992       | 1   | 1    | 0      | 100%   |
+| Name           | Pts | Wins | Losses | Win  %  |
+|----------------|-----|------|--------|---------|
+| Tyler*         | 30  | 29   | 7      | 81%     |
+| Kellz          | 30  | 30   | 6      | 83%     |
+| Sco            | 29  | 29   | 6      | 83%     |
+| Lil Jev        | 29  | 29   | 6      | 83%     |
+| Juicy Booty    | 28  | 28   | 7      | 80%     |
+| talesofderp    | 27  | 27   | 9      | 75%     |
+| HighFi         | 27  | 27   | 9      | 75%     |
+| Jev's Step Daddy (AgentPK )       | 26  | 26   | 10     | 72%     |
+| Doug           | 2   | 2    | 1      | 67%     |
+| Granby         | 1   | 1    | 0      | 100%    |
+| bold and brash | 1   | 1    | 0      | 100%    |
+| DEEZ NUTZ      | 1   | 1    | 0      | 100%    |
+| Gemini AI      | 1   | 1    | 1      | 50%     |
+| xion1992       | 1   | 1    | 1      | 50%     |
