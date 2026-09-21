@@ -23,9 +23,9 @@ Whether you're fighting for the top spot or just trying not to finish last, this
 | Name           | Pts | Wins | Losses | Win  %  |
 |----------------|-----|------|--------|---------|
 | Tyler**        | 46  | 44   | 8      | 85%     |
-| Kellz          | 44  | 44   | 8      | 85%     |
-| Sco            | 43  | 29   | 8      | 78%     |
-| Lil Jev        | 43  | 43   | 8      | 84%     |
+| Kellz          | 44  | 44   | 9      | 84%     |
+| Sco            | 43  | 43   | 9      | 83%     |
+| Lil Jev        | 43  | 43   | 9      | 83%     |
 | talesofderp    | 43  | 43   | 9      | 83%     |
 | HighFi         | 42  | 42   | 10     | 81%     |
 | AgentPK        | 41  | 41   | 11     | 79%     |
