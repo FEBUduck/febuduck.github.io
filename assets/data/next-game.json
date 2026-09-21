@@ -1,12 +1,12 @@
 {
-  "kickoff": "2026-09-18 22:30:00",
-  "opponent": "Portland State",
-  "opponentLogo": "/assets/logos/PSU.png",
+  "kickoff": "2026-09-26 19:30:00",
+  "opponent": "USC",
+  "opponentLogo": "/assets/logos/USC.png",
   "oregonLogo": "/assets/logos/oregon.png",
-  "date": "Friday, Sept 18",
-  "time": "10:30 PM EDT",
-  "tv": "B1G Network",
-  "oregonRecord": "1–1",
-  "opponentRecord": "0–3",
-  "spread": "Oregon -19.5"
+  "date": "Saturday, Sept 26",
+  "time": "7:30 PM EDT",
+  "tv": "NBC / Peacock",
+  "oregonRecord": "2–1",
+  "opponentRecord": "3–0",
+  "spread": "Oregon -5.5"
 }
