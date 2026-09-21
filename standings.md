@@ -22,14 +22,14 @@ Whether you're fighting for the top spot or just trying not to finish last, this
 
 | Name           | Pts | Wins | Losses | Win  %  |
 |----------------|-----|------|--------|---------|
-| Tyler*         | 30  | 29   | 7      | 81%     |
-| Kellz          | 30  | 30   | 6      | 83%     |
-| Sco            | 29  | 29   | 6      | 83%     |
-| Lil Jev        | 29  | 29   | 6      | 83%     |
+| Tyler**        | 46  | 44   | 8      | 85%     |
+| Kellz          | 44  | 44   | 8      | 85%     |
+| Sco            | 43  | 29   | 8      | 78%     |
+| Lil Jev        | 43  | 43   | 8      | 84%     |
+| talesofderp    | 43  | 43   | 9      | 83%     |
+| HighFi         | 42  | 42   | 10     | 81%     |
+| AgentPK        | 41  | 41   | 11     | 79%     |
 | Juicy Booty    | 28  | 28   | 7      | 80%     |
-| talesofderp    | 27  | 27   | 9      | 75%     |
-| HighFi         | 27  | 27   | 9      | 75%     |
-| Jev's Step Daddy (AgentPK )       | 26  | 26   | 10     | 72%     |
 | Doug           | 2   | 2    | 1      | 67%     |
 | Granby         | 1   | 1    | 0      | 100%    |
 | bold and brash | 1   | 1    | 0      | 100%    |
