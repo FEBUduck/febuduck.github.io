@@ -82,5 +82,6 @@ And that answer may tell us a lot more about Dan Lanning than it does Dante Moor
 
 #### Housekeeping
 A quick reminder: if you haven't submitted your picks yet, now's the time. We've got games on the schedule tonight, so don't get caught taking an accidental bye week. The picks link can be found below.
+[Week 4 Preducktions](https://febuducks.com/2026-09-21-Week4-picks/)
 
 Also, if you're new to the site, check out our Discord server by clicking the OUR Home link in the top right corner. Come talk Ducks, college football, and help keep the community growing.
