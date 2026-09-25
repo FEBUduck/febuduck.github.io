@@ -2,8 +2,8 @@
 layout: post
 title: Who's Really Under Pressure in Los Angeles?
 subtitle: Dante Moore and Dan Lanning enter Los Angeles facing different questions, but both need answers against USC.
-cover-img: /assets/img/daban.png
-thumbnail-img: /assets/img/dath.png
+cover-img: /assets/img/dmban.png
+thumbnail-img: /assets/img/dmth.png
 gh-repo: daattali/beautiful-jekyll
 gh-badge: []
 tags: [FEBU, Article, USC, Dante, Dan Lanning, B1G]
