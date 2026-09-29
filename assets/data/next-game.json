@@ -1,12 +1,12 @@
 {
-  "kickoff": "2026-10-10 19:30:00",
+  "kickoff": "2026-10-10 13:30:00",
   "opponent": "UCLA",
   "opponentLogo": "/assets/logos/UCLA.png",
   "oregonLogo": "/assets/logos/oregon.png",
   "date": "Saturday, Oct 10",
-  "time": "7:30 PM EDT",
-  "tv": "NBC / Peacock",
+  "time": "3:30 PM EDT",
+  "tv": "CBS / Paramount+",
   "oregonRecord": "3–1",
   "opponentRecord": "4–0",
-  "spread": "Oregon -5.5"
+  "spread": "Oregon -12.5"
 }
