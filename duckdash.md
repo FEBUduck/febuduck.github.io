@@ -144,13 +144,20 @@ body,
 ========================= */
 
 #recruit-name{
-
-    color:#FEE123 !important;
-
-    font-size:34px;
-
-    font-weight:bold;
-
+ 
+color:#FEE123 !important;
+ 
+font-size:40px;
+ 
+font-weight:800;
+ 
+text-align:center;
+ 
+line-height:1.3;
+ 
+text-shadow:
+0 0 10px rgba(254,225,35,.4);
+ 
 }
 
 /* =========================
@@ -390,19 +397,29 @@ Actions Remaining:
 <script>
 
 const FIRST_NAMES = [
-"Jayden","Bryce","Malik","Jordan",
-"Ty","Cooper","Jackson","Ryan",
+"Jayden","Bryce","Wyatt","Jordan",
+"Cole","Caleb","Jackson","Ryan",
 "Aiden","Dante","Cam","Micah",
 "Jalen","Noah","Evan","Trey"
 ];
 
 const LAST_NAMES = [
-"Johnson","Brown","Smith","Walker",
-"Davis","Taylor","Wilson","Miller",
+"Johnson","Brown","Smith","Rourke",
+"Vaughn","Taylor","Wilson","Miller",
 "Jackson","Harris","Williams",
-"Carter","Morgan"
+"Carter","Donald"
 ];
 
+const LEGENDARY_NAMES = [
+    "Mariota",
+    "Barner",
+    "Herbert",
+    "Dixon",
+    "Stewart",
+    "Nix",
+    "Quackston"
+];
+   
 const POSITIONS = [
 "QB","RB","WR","TE","OT",
 "EDGE","DL","LB","CB","S"
@@ -449,6 +466,46 @@ function getStars()
 
 function generateRecruit()
 {
+    // 3% chance of a legendary Ducks recruit
+
+    if(Math.random() < 0.03)
+    {
+        return {
+
+    name:
+        "⭐⭐⭐⭐⭐ " +
+        POSITIONS[Math.floor(Math.random()*POSITIONS.length)] +
+        " " +
+        FIRST_NAMES[Math.floor(Math.random()*FIRST_NAMES.length)] +
+        " " +
+        LEGENDARY_NAMES[Math.floor(Math.random()*LEGENDARY_NAMES.length)],
+
+    stars:5,
+
+    legendary:true,
+
+    likes:
+        INTERESTS[
+            Math.floor(Math.random()*INTERESTS.length)
+        ],
+
+    potential:"elite",
+
+            oregon:55,
+            usc:40,
+            osu:40,
+            texas:40,
+
+            actions:3,
+
+            usedNike:false,
+            usedNIL:false,
+            usedCoach:false,
+            usedVisit:false
+
+        };
+    }
+
     let stars=getStars();
 
     let potentialPool=[
@@ -519,8 +576,17 @@ function updateResources()
 
 function updateRecruitDisplay()
 {
-    document.getElementById("recruit-name").innerText=
-        currentRecruit.name;
+    if(currentRecruit.legendary)
+    {
+        document.getElementById("recruit-name").innerHTML =
+            "🔥 GENERATIONAL PROSPECT 🔥<br>" +
+            currentRecruit.name;
+    }
+    else
+    {
+        document.getElementById("recruit-name").innerText =
+            currentRecruit.name;
+    }
 
     document.getElementById("oregon-score").innerText=
         currentRecruit.oregon;
