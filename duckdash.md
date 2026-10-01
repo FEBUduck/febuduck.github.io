@@ -45,7 +45,7 @@ body,
 
     border-radius:15px;
 
-    border:3px solid #FEE123;
+    border:4px solid #FEE123;
 
     box-shadow:
         0 0 25px rgba(254,225,35,.35);
