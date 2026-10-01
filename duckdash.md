@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 🦆 Duck Dash 🦆
-subtitle: Fans first. Ducks always.
+title:
+subtitle:
 ---
 
 <style>
@@ -294,19 +294,24 @@ body,
     
 <div class="sim-card">
 
-<span class="stat-label">💰 NIL:</span>
+<span class="">💰 NIL:</span>
 <span id="nil">100</span>
 
 &nbsp;&nbsp;&nbsp;
 
-<span class="stat-label">🏠 Coach Time:</span>
+<span class="">🏠 Coach Time:</span>
 <span id="coach">20</span>
 
 &nbsp;&nbsp;&nbsp;
 
-<span class="stat-label">✈️ Visits:</span>
+<span class="">✈️ Visits:</span>
 <span id="visits">6</span>
 
+&nbsp;&nbsp;&nbsp;
+
+<span class="stat-label">⭐ Commits:</span>
+<span id="commit-count">0</span>/5
+ 
 &nbsp;&nbsp;&nbsp;
 
 <span class="stat-label">🎓 Scholarships:</span>
@@ -421,6 +426,7 @@ let recruitIndex = 0;
 
 let classScore = 0;
 let signedPlayers = [];
+let totalCommits = 0;
 
 function log(text)
 {
@@ -495,10 +501,20 @@ function generateRecruit()
 
 function updateResources()
 {
-    document.getElementById("nil").innerText=nilBudget;
-    document.getElementById("coach").innerText=coachTime;
-    document.getElementById("visits").innerText=visits;
-    document.getElementById("scholarships").innerText=scholarships;
+    document.getElementById("nil").innerText =
+        nilBudget;
+
+    document.getElementById("coach").innerText =
+        coachTime;
+
+    document.getElementById("visits").innerText =
+        visits;
+
+    document.getElementById("scholarships").innerText =
+        scholarships;
+
+    document.getElementById("commit-count").innerText =
+        totalCommits;
 }
 
 function updateRecruitDisplay()
@@ -723,7 +739,11 @@ function commitDecision()
     {
         signedPlayers.push(currentRecruit);
 
-        scholarships--;
+totalCommits++;
+
+scholarships--;
+
+updateResources();
 
         if(currentRecruit.stars===5)
             classScore+=100;
