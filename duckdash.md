@@ -6,40 +6,65 @@ subtitle: Fans first. Ducks always.
 
 <style>
 
+/* ENTIRE GAME AREA */
+
+.sim-wrapper{
+    background:linear-gradient(
+        180deg,
+        #013220 0%,
+        #024731 50%,
+        #0b4f33 100%
+    );
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border:3px solid #FEE123;
+
+    box-shadow:
+        0 0 25px rgba(254,225,35,.25);
+
+    margin-top:20px;
+}
+
+/* HEADER */
+
+.sim-header{
+    text-align:center;
+
+    background:#FEE123;
+
+    color:#024731;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+}
+
+/* CARDS */
+
 .sim-card{
     background:#0b4f33;
+
     color:white;
+
     padding:20px;
+
     border-radius:12px;
+
     margin-bottom:20px;
-    border:2px solid #FEE123;
+
+    border:1px solid rgba(254,225,35,.4);
 }
 
-.sim-title{
-    text-align:center;
-    color:#FEE123 !important;
-}
-
-.sim-btn{
-    background:#FEE123;
-    border:none;
-    color:#024731;
-    padding:12px;
-    margin:5px;
-    border-radius:6px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.sim-btn:hover{
-    opacity:.9;
-}
-
-#recruit-name{
-    font-size:32px;
-    font-weight:bold;
-    color:#FEE123 !important;
-}
+/* FORCE TEXT COLORS */
 
 .sim-card,
 .sim-card div,
@@ -50,13 +75,59 @@ subtitle: Fans first. Ducks always.
     color:white !important;
 }
 
+/* PAGE TITLE */
+
+.sim-title{
+    text-align:center;
+
+    color:#FEE123 !important;
+
+    font-size:42px;
+}
+
+/* RECRUIT NAME */
+
+#recruit-name{
+    font-size:32px;
+
+    font-weight:bold;
+
+    color:#FEE123 !important;
+}
+
+/* BUTTONS */
+
+.sim-btn{
+    background:#FEE123;
+
+    border:none;
+
+    color:#024731;
+
+    padding:12px;
+
+    margin:5px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+.sim-btn:hover{
+    opacity:.9;
+}
+
+/* SCORES */
+
 #oregon-score{
     color:#7CFC00 !important;
     font-weight:bold;
 }
 
 #usc-score{
-    color:#ff9b9b !important;
+    color:#ff9999 !important;
     font-weight:bold;
 }
 
@@ -70,37 +141,60 @@ subtitle: Fans first. Ducks always.
     font-weight:bold;
 }
 
-#sim-log{
-    background:#111;
-    color:#e6e6e6 !important;
-    padding:15px;
-    border-radius:8px;
-    height:250px;
-    overflow-y:auto;
-    border:1px solid #444;
-}
-
-.commit{
-    color:#59ff59 !important;
-    font-weight:bold;
-    font-size:18px;
-}
-
-.loss{
-    color:#ff7878 !important;
-    font-weight:bold;
-}
+/* RESOURCES */
 
 .stat-label{
     color:#FEE123 !important;
     font-weight:bold;
 }
 
+/* LOG */
+
+#sim-log{
+    background:#111;
+
+    color:#ddd !important;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    height:250px;
+
+    overflow-y:auto;
+
+    border:1px solid #444;
+}
+
+/* COMMITS */
+
+.commit{
+    color:#59ff59 !important;
+
+    font-weight:bold;
+
+    font-size:18px;
+}
+
+.loss{
+    color:#ff7878 !important;
+
+    font-weight:bold;
+}
 
 </style>
 
-<h1 class="sim-title">🦆 FEBU Ducks Recruiting Simulator 🦆</h1>
 
+<h1 class="sim-title">
+🦆 FEBU Ducks Recruiting Simulator 🦆
+</h1>
+ 
+<div class="sim-wrapper">
+ 
+<div class="sim-header">
+🦆 SCO DUCKS 🦆
+</div>
+    
 <div class="sim-card">
 
 <span class="stat-label">💰 NIL:</span>
@@ -189,6 +283,7 @@ Actions Remaining:
 </div>
 
 <div id="signing-day" class="sim-card" style="display:none;"></div>
+</div> <!-- closes sim-wrapper -->
 
 <script>
 
