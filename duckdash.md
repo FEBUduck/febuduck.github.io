@@ -4,169 +4,397 @@ title: 🦆 Duck Dash 🦆
 subtitle: Fans first. Ducks always.
 ---
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Oregon Recruiting Simulator</title>
 
-# Duck Dash
-
-# Duck Dash
-
-<!-- GLOBAL FIXES: full‑screen, no scroll, stable player -->
 <style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+body{
+    background:#024731;
+    color:white;
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:20px;
+}
 
-  #duckdash-game {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw !important;
-    height: 100vh !important;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: #003300;
-    z-index: 9999;
-  }
+.container{
+    max-width:900px;
+    margin:auto;
+}
 
-  #duckdash-player {
-    pointer-events: none;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10000;
-  }
+.card{
+    background:#0b5e3c;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
 
-  .duckdash-obstacle {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #b5651d;
-    border-radius: 5px;
-  }
+button{
+    padding:12px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+    background:#f5c842;
+}
 
-  #duckdash-score {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 24px;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
+button:hover{
+    opacity:.9;
+}
 
-  #duckdash-over {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    color: white;
-    display: none;
-    font-family: Arial, sans-serif;
-  }
+#log{
+    height:250px;
+    overflow-y:auto;
+    background:#111;
+    padding:10px;
+    border-radius:10px;
+}
 
-  #duckdash-restart {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 20px;
-    display: none;
-  }
+h1{
+    color:#f5c842;
+}
+
+.stat{
+    display:inline-block;
+    margin-right:20px;
+    font-weight:bold;
+}
+
+.recruit-name{
+    font-size:28px;
+    color:#f5c842;
+}
+
+.commit{
+    color:lime;
+}
+
+.loss{
+    color:red;
+}
 </style>
+</head>
 
-<div id="duckdash-game">
-  <img id="duckdash-player" src="/assets/img/FEBUlogosmall.png">
-  <div id="duckdash-score">Score: 0</div>
-  <div id="duckdash-over">GAME OVER</div>
-  <button id="duckdash-restart">Restart</button>
+<body>
+
+<div class="container">
+
+<h1>🦆 Oregon Recruiting Simulator</h1>
+
+<div class="card">
+
+<div class="stat">💰 NIL Budget: <span id="nil">100</span></div>
+<div class="stat">🏠 Coach Visits: <span id="coach">20</span></div>
+<div class="stat">✈️ Official Visits: <span id="visit">5</span></div>
+
+</div>
+
+<div class="card">
+
+<div class="recruit-name" id="name"></div>
+
+<p id="details"></p>
+
+<p>
+Interest Level:
+<b><span id="interest"></span>%</b>
+</p>
+
+<div id="buttons">
+<button onclick="pitchNike()">Nike Pitch</button>
+<button onclick="pitchNIL()">NIL Package</button>
+<button onclick="coachVisit()">Home Visit</button>
+<button onclick="officialVisit()">Official Visit</button>
+<button onclick="advanceRecruit()">Move To Next Recruit</button>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Recruiting News</h2>
+<div id="log"></div>
+</div>
+
 </div>
 
 <script>
-  const game = document.getElementById("duckdash-game");
-  const player = document.getElementById("duckdash-player");
-  const scoreDisplay = document.getElementById("duckdash-score");
-  const gameOverText = document.getElementById("duckdash-over");
-  const restartBtn = document.getElementById("duckdash-restart");
 
-  let score = 0;
-  let speed = 3;
-  let obstacles = [];
-  let alive = true;
+let recruits = [
+{
+name:"⭐⭐⭐⭐⭐ QB Throwin Mahomes",
+likes:"NIL",
+interest:50
+},
+{
+name:"⭐⭐⭐⭐⭐ DL Sack Barmstrong",
+likes:"Coach",
+interest:45
+},
+{
+name:"⭐⭐⭐⭐⭐ WR Fast McSpeed",
+likes:"Visit",
+interest:55
+},
+{
+name:"⭐⭐⭐⭐ OT Pancake Johnson",
+likes:"Coach",
+interest:50
+},
+{
+name:"⭐⭐⭐⭐⭐ CB Lockdown Lewis",
+likes:"Visit",
+interest:48
+},
+{
+name:"⭐⭐⭐⭐ RB Truck Stick",
+likes:"NIL",
+interest:52
+},
+{
+name:"⭐⭐⭐⭐⭐ LB Boom Tagovailoa",
+likes:"Coach",
+interest:47
+},
+{
+name:"⭐⭐⭐⭐ WR Touchdown Tommy",
+likes:"Visit",
+interest:54
+},
+{
+name:"⭐⭐⭐⭐ Edge Bryce Smash",
+likes:"Coach",
+interest:50
+},
+{
+name:"⭐⭐⭐⭐⭐ ATH Autzen Legend",
+likes:"NIL",
+interest:40
+}
+];
 
-  // Center player based on game div, not whole page
-  let playerX = (game.offsetWidth / 2) - 30;
-  const moveSpeed = 10;
+let current = 0;
 
-  document.addEventListener("keydown", (e) => {
-    if (!alive) return;
+let signed = [];
+let classPoints = 0;
 
-    if (e.key === "ArrowLeft" || e.key === "a") playerX -= moveSpeed;
-    if (e.key === "ArrowRight" || e.key === "d") playerX += moveSpeed;
+let nilBudget = 100;
+let coachTime = 20;
+let visits = 5;
 
-    player.style.left = playerX + "px";
-  });
+function updateResources()
+{
+document.getElementById("nil").innerText=nilBudget;
+document.getElementById("coach").innerText=coachTime;
+document.getElementById("visit").innerText=visits;
+}
 
-  function spawnObstacle() {
-    if (!alive) return;
+function random(min,max)
+{
+return Math.floor(Math.random()*(max-min+1))+min;
+}
 
-    const obs = document.createElement("div");
-    obs.classList.add("duckdash-obstacle");
+function log(text)
+{
+const div=document.getElementById("log");
+div.innerHTML += text+"<br>";
+div.scrollTop=div.scrollHeight;
+}
 
-    // Spawn inside game div width
-    obs.style.left = Math.random() * (game.offsetWidth - 40) + "px";
-    obs.style.top = "-40px";
+function loadRecruit()
+{
+if(current>=recruits.length)
+{
+finishClass();
+return;
+}
 
-    game.appendChild(obs);
-    obstacles.push(obs);
-  }
+let r=recruits[current];
 
-  setInterval(spawnObstacle, 800);
+document.getElementById("name").innerText=r.name;
 
-  function loop() {
-    if (!alive) return;
+document.getElementById("details").innerHTML=
+"Competition: USC, Ohio State, Texas";
 
-    obstacles.forEach((obs, index) => {
-      let y = parseInt(obs.style.top);
-      y += speed;
-      obs.style.top = y + "px";
+document.getElementById("interest").innerText=r.interest;
+}
 
-      const px = playerX;
-      const py = game.offsetHeight - 100;
+function addInterest(amount)
+{
+recruits[current].interest += amount;
 
-      const ox = parseInt(obs.style.left);
-      const oy = y;
+if(recruits[current].interest>100)
+recruits[current].interest=100;
 
-      // Collision detection
-      if (
-        ox < px + 60 &&
-        ox + 40 > px &&
-        oy < py + 60 &&
-        oy + 40 > py
-      ) {
-        alive = false;
-        gameOverText.style.display = "block";
-        restartBtn.style.display = "inline-block";
-      }
+document.getElementById("interest").innerText=
+recruits[current].interest;
+}
 
-      // Off-screen cleanup
-      if (y > game.offsetHeight) {
-        obs.remove();
-        obstacles.splice(index, 1);
-        score++;
-        scoreDisplay.textContent = "Score: " + score;
-        speed += 0.05;
-      }
-    });
+function pitchNike()
+{
+let gain=random(4,10);
 
-    requestAnimationFrame(loop);
-  }
+if(recruits[current].likes==="Visit")
+gain-=2;
 
-  loop();
+addInterest(gain);
 
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
+log("👟 Nike pitch worked. Interest +" + gain);
+}
+
+function pitchNIL()
+{
+if(nilBudget<20)
+{
+log("💰 Not enough NIL money.");
+return;
+}
+
+nilBudget-=20;
+
+let gain=random(15,30);
+
+if(recruits[current].likes==="NIL")
+gain+=10;
+
+addInterest(gain);
+
+updateResources();
+
+log("💰 NIL package offered. Interest +" + gain);
+}
+
+function coachVisit()
+{
+if(coachTime<2)
+{
+log("🏠 No coach visits remaining.");
+return;
+}
+
+coachTime-=2;
+
+let gain=random(10,20);
+
+if(recruits[current].likes==="Coach")
+gain+=10;
+
+addInterest(gain);
+
+updateResources();
+
+log("🏠 Dan Lanning home visit. Interest +" + gain);
+}
+
+function officialVisit()
+{
+if(visits<1)
+{
+log("✈️ No visits remaining.");
+return;
+}
+
+visits--;
+
+let gain=random(12,25);
+
+if(recruits[current].likes==="Visit")
+gain+=10;
+
+addInterest(gain);
+
+updateResources();
+
+log("✈️ Recruit visits Autzen Stadium. Interest +" + gain);
+}
+
+function advanceRecruit()
+{
+let r=recruits[current];
+
+let roll=random(1,100);
+
+if(r.interest>=roll)
+{
+signed.push(r.name);
+
+let stars=(r.name.match(/⭐/g)||[]).length;
+
+classPoints+=stars;
+
+log(
+"<span class='commit'>✅ BOOM! "
++ r.name +
+" committed to Oregon.</span>"
+);
+}
+else
+{
+let rivals=[
+"USC",
+"Ohio State",
+"Texas",
+"Washington"
+];
+
+let rival=
+rivals[random(0,rivals.length-1)];
+
+log(
+"<span class='loss'>❌ "
++ r.name +
+" committed to "
++ rival +
+"</span>"
+);
+}
+
+current++;
+
+setTimeout(loadRecruit,400);
+}
+
+function finishClass()
+{
+document.getElementById("buttons").style.display="none";
+
+let ranking;
+
+if(classPoints>=40)
+ranking="#1 Class - Dynasty Mode";
+else if(classPoints>=35)
+ranking="Top 3 Class";
+else if(classPoints>=30)
+ranking="Top 10 Class";
+else if(classPoints>=20)
+ranking="Solid Class";
+else
+ranking="Time to Fire Up the Transfer Portal";
+
+document.querySelector(".card").innerHTML=
+`
+<h2>National Signing Day</h2>
+
+<p><b>Signed:</b> ${signed.length} recruits</p>
+
+<p><b>Class Score:</b> ${classPoints}</p>
+
+<p><b>Result:</b> ${ranking}</p>
+
+<button onclick="location.reload()">
+Start New Class
+</button>
+`;
+
+log("📣 Recruiting cycle complete.");
+}
+
+updateResources();
+loadRecruit();
+
 </script>
+
+</body>
+</html>
