@@ -4,391 +4,532 @@ title: 🦆 Duck Dash 🦆
 subtitle: Fans first. Ducks always.
 ---
 
-<!DOCTYPE html>
+Recruiting Simulator
 <html>
 <head>
-<meta charset="utf-8">
-<title>Oregon Recruiting Simulator</title>
+<meta charset="UTF-8">
+<title>FEBU Ducks Recruiting Simulator</title>
 
 <style>
+
 body{
     background:#024731;
     color:white;
-    font-family:Arial,sans-serif;
-    margin:0;
-    padding:20px;
-}
-
-.container{
+    font-family:Arial, sans-serif;
     max-width:900px;
     margin:auto;
-}
-
-.card{
-    background:#0b5e3c;
     padding:20px;
-    border-radius:10px;
-    margin-bottom:20px;
-}
-
-button{
-    padding:12px;
-    margin:5px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    font-weight:bold;
-    background:#f5c842;
-}
-
-button:hover{
-    opacity:.9;
-}
-
-#log{
-    height:250px;
-    overflow-y:auto;
-    background:#111;
-    padding:10px;
-    border-radius:10px;
 }
 
 h1{
-    color:#f5c842;
+    color:#FEE123;
 }
 
-.stat{
-    display:inline-block;
-    margin-right:20px;
+.card{
+    background:#0d5d3f;
+    padding:20px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+button{
+    background:#FEE123;
+    color:black;
+    border:none;
+    margin:5px;
+    padding:10px 15px;
     font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
 }
 
-.recruit-name{
-    font-size:28px;
-    color:#f5c842;
+button:disabled{
+    opacity:.4;
+    cursor:not-allowed;
+}
+
+#log{
+    background:#111;
+    padding:10px;
+    height:250px;
+    overflow-y:auto;
+    border-radius:10px;
 }
 
 .commit{
-    color:lime;
+    color:#66ff66;
 }
 
 .loss{
-    color:red;
+    color:#ff6666;
 }
+
+.stat{
+    margin-right:20px;
+    display:inline-block;
+    font-weight:bold;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
-
-<h1>🦆 Oregon Recruiting Simulator</h1>
+<h1>🦆 FEBU Ducks Recruiting Simulator</h1>
 
 <div class="card">
 
-<div class="stat">💰 NIL Budget: <span id="nil">100</span></div>
-<div class="stat">🏠 Coach Visits: <span id="coach">20</span></div>
-<div class="stat">✈️ Official Visits: <span id="visit">5</span></div>
+<span class="stat">💰 NIL: <span id="nil">100</span></span>
+<span class="stat">🏠 Coach Time: <span id="coach">20</span></span>
+<span class="stat">✈️ Visits: <span id="visit">6</span></span>
 
 </div>
 
 <div class="card">
 
-<div class="recruit-name" id="name"></div>
+<h2 id="name"></h2>
 
-<p id="details"></p>
-
-<p>
-Interest Level:
-<b><span id="interest"></span>%</b>
-</p>
-
-<div id="buttons">
-<button onclick="pitchNike()">Nike Pitch</button>
-<button onclick="pitchNIL()">NIL Package</button>
-<button onclick="coachVisit()">Home Visit</button>
-<button onclick="officialVisit()">Official Visit</button>
-<button onclick="advanceRecruit()">Move To Next Recruit</button>
+<div>
+<strong>Oregon:</strong>
+<span id="oregonScore"></span>
 </div>
+
+<div>
+<strong>USC:</strong>
+<span id="uscScore"></span>
+</div>
+
+<div>
+<strong>Ohio State:</strong>
+<span id="osuScore"></span>
+</div>
+
+<br>
+
+<div>
+<strong>Actions Remaining:</strong>
+<span id="actions"></span>
+</div>
+
+<br>
+
+<button id="nikeBtn" onclick="useAction('nike')">
+👟 Nike Pitch
+</button>
+
+<button id="nilBtn" onclick="useAction('nil')">
+💰 NIL Package
+</button>
+
+<button id="coachBtn" onclick="useAction('coach')">
+🏠 Home Visit
+</button>
+
+<button id="visitBtn" onclick="useAction('visit')">
+✈️ Official Visit
+</button>
 
 </div>
 
 <div class="card">
-<h2>Recruiting News</h2>
+<h3>Recruiting News</h3>
 <div id="log"></div>
-</div>
-
 </div>
 
 <script>
 
-let recruits = [
+const recruits = [
+
 {
 name:"⭐⭐⭐⭐⭐ QB Throwin Mahomes",
-likes:"NIL",
-interest:50
+likes:"nil"
 },
+
 {
-name:"⭐⭐⭐⭐⭐ DL Sack Barmstrong",
-likes:"Coach",
-interest:45
+name:"⭐⭐⭐⭐⭐ EDGE Sack Barmstrong",
+likes:"coach"
 },
+
 {
 name:"⭐⭐⭐⭐⭐ WR Fast McSpeed",
-likes:"Visit",
-interest:55
+likes:"visit"
 },
+
 {
 name:"⭐⭐⭐⭐ OT Pancake Johnson",
-likes:"Coach",
-interest:50
+likes:"coach"
 },
+
 {
 name:"⭐⭐⭐⭐⭐ CB Lockdown Lewis",
-likes:"Visit",
-interest:48
+likes:"nike"
 },
+
 {
 name:"⭐⭐⭐⭐ RB Truck Stick",
-likes:"NIL",
-interest:52
+likes:"nil"
 },
+
 {
-name:"⭐⭐⭐⭐⭐ LB Boom Tagovailoa",
-likes:"Coach",
-interest:47
+name:"⭐⭐⭐⭐⭐ LB Boom Johnson",
+likes:"coach"
 },
+
 {
-name:"⭐⭐⭐⭐ WR Touchdown Tommy",
-likes:"Visit",
-interest:54
+name:"⭐⭐⭐⭐ WR Route Runner Rick",
+likes:"visit"
 },
-{
-name:"⭐⭐⭐⭐ Edge Bryce Smash",
-likes:"Coach",
-interest:50
-},
+
 {
 name:"⭐⭐⭐⭐⭐ ATH Autzen Legend",
-likes:"NIL",
-interest:40
+likes:"nil"
+},
+
+{
+name:"⭐⭐⭐⭐ DT Big Chungus Jr",
+likes:"coach"
 }
+
 ];
 
-let current = 0;
-
-let signed = [];
-let classPoints = 0;
+let index = 0;
 
 let nilBudget = 100;
 let coachTime = 20;
-let visits = 5;
+let visits = 6;
 
-function updateResources()
-{
-document.getElementById("nil").innerText=nilBudget;
-document.getElementById("coach").innerText=coachTime;
-document.getElementById("visit").innerText=visits;
-}
+let commits = [];
+let classScore = 0;
 
-function random(min,max)
-{
+let recruit;
+
+function random(min,max){
 return Math.floor(Math.random()*(max-min+1))+min;
 }
 
-function log(text)
-{
-const div=document.getElementById("log");
-div.innerHTML += text+"<br>";
-div.scrollTop=div.scrollHeight;
+function log(text){
+
+const div = document.getElementById("log");
+
+div.innerHTML += text + "<br>";
+
+div.scrollTop = div.scrollHeight;
+
 }
 
-function loadRecruit()
-{
-if(current>=recruits.length)
-{
+function updateResources(){
+
+document.getElementById("nil").textContent=nilBudget;
+document.getElementById("coach").textContent=coachTime;
+document.getElementById("visit").textContent=visits;
+
+}
+
+function loadRecruit(){
+
+if(index >= recruits.length){
+
 finishClass();
 return;
+
 }
 
-let r=recruits[current];
+recruit = {
 
-document.getElementById("name").innerText=r.name;
+...recruits[index],
 
-document.getElementById("details").innerHTML=
-"Competition: USC, Ohio State, Texas";
+oregon:random(35,55),
+usc:random(35,55),
+osu:random(35,55),
 
-document.getElementById("interest").innerText=r.interest;
+actions:3,
+
+usedNike:false,
+usedNIL:false,
+usedCoach:false,
+usedVisit:false
+
+};
+
+updateRecruitDisplay();
+
 }
 
-function addInterest(amount)
-{
-recruits[current].interest += amount;
+function updateRecruitDisplay(){
 
-if(recruits[current].interest>100)
-recruits[current].interest=100;
+document.getElementById("name").innerText=recruit.name;
 
-document.getElementById("interest").innerText=
-recruits[current].interest;
+document.getElementById("oregonScore").innerText=recruit.oregon;
+document.getElementById("uscScore").innerText=recruit.usc;
+document.getElementById("osuScore").innerText=recruit.osu;
+
+document.getElementById("actions").innerText=recruit.actions;
+
 }
 
-function pitchNike()
-{
-let gain=random(4,10);
+function runRivals(){
 
-if(recruits[current].likes==="Visit")
-gain-=2;
+recruit.usc += random(2,8);
+recruit.osu += random(2,8);
 
-addInterest(gain);
-
-log("👟 Nike pitch worked. Interest +" + gain);
 }
 
-function pitchNIL()
-{
-if(nilBudget<20)
-{
-log("💰 Not enough NIL money.");
+function randomEvent(){
+
+if(Math.random() > .25)
+return;
+
+const event = random(1,5);
+
+switch(event){
+
+case 1:
+recruit.oregon += 10;
+log("🦆 Recruit watched Oregon beat USC. +10 Oregon");
+break;
+
+case 2:
+recruit.osu += 12;
+log("🌰 Ohio State sweetened its NIL offer. +12 Ohio State");
+break;
+
+case 3:
+recruit.oregon += 8;
+log("🏟️ Recruit loved Autzen Stadium clips. +8 Oregon");
+break;
+
+case 4:
+recruit.usc += 10;
+log("✌️ USC hosted recruit on campus. +10 USC");
+break;
+
+case 5:
+recruit.oregon -= 6;
+log("😬 Recruit rewatched Oklahoma State highlights. -6 Oregon");
+break;
+
+}
+
+}
+
+function useAction(type){
+
+if(recruit.actions <= 0)
+return;
+
+let gain = 0;
+
+switch(type){
+
+case "nike":
+
+if(recruit.usedNike){
+log("You've already used the Nike pitch.");
 return;
 }
 
-nilBudget-=20;
+recruit.usedNike=true;
 
-let gain=random(15,30);
+gain=random(5,10);
 
-if(recruits[current].likes==="NIL")
-gain+=10;
+if(recruit.likes==="nike")
+gain+=15;
 
-addInterest(gain);
+log("👟 Nike pitch. +" + gain);
+break;
 
-updateResources();
+case "nil":
 
-log("💰 NIL package offered. Interest +" + gain);
-}
-
-function coachVisit()
-{
-if(coachTime<2)
-{
-log("🏠 No coach visits remaining.");
+if(recruit.usedNIL){
+log("You've already used NIL.");
 return;
 }
 
-coachTime-=2;
+if(nilBudget < 20){
 
-let gain=random(10,20);
+log("Not enough NIL funds.");
+return;
 
-if(recruits[current].likes==="Coach")
-gain+=10;
-
-addInterest(gain);
-
-updateResources();
-
-log("🏠 Dan Lanning home visit. Interest +" + gain);
 }
 
-function officialVisit()
-{
-if(visits<1)
-{
-log("✈️ No visits remaining.");
+nilBudget -= 20;
+
+recruit.usedNIL=true;
+
+gain=random(10,20);
+
+if(recruit.likes==="nil")
+gain+=20;
+
+log("💰 NIL package. +" + gain);
+break;
+
+case "coach":
+
+if(recruit.usedCoach){
+log("You've already used a home visit.");
 return;
+}
+
+if(coachTime < 2){
+
+log("No coach time remaining.");
+return;
+
+}
+
+coachTime -= 2;
+
+recruit.usedCoach=true;
+
+gain=random(10,20);
+
+if(recruit.likes==="coach")
+gain+=20;
+
+log("🏠 Dan Lanning visit. +" + gain);
+break;
+
+case "visit":
+
+if(recruit.usedVisit){
+log("Official visit already used.");
+return;
+}
+
+if(visits < 1){
+
+log("No visits remaining.");
+return;
+
 }
 
 visits--;
 
-let gain=random(12,25);
+recruit.usedVisit=true;
 
-if(recruits[current].likes==="Visit")
-gain+=10;
+gain=random(10,20);
 
-addInterest(gain);
+if(recruit.likes==="visit")
+gain+=20;
 
-updateResources();
+log("✈️ Official visit. +" + gain);
+break;
 
-log("✈️ Recruit visits Autzen Stadium. Interest +" + gain);
 }
 
-function advanceRecruit()
-{
-let r=recruits[current];
+recruit.oregon += gain;
 
-let roll=random(1,100);
+runRivals();
 
-if(r.interest>=roll)
-{
-signed.push(r.name);
+randomEvent();
 
-let stars=(r.name.match(/⭐/g)||[]).length;
+recruit.actions--;
 
-classPoints+=stars;
+updateResources();
+updateRecruitDisplay();
+
+if(recruit.actions === 0){
+
+setTimeout(commitDecision,800);
+
+}
+
+}
+
+function commitDecision(){
+
+let winner="Oregon";
+let score=recruit.oregon;
+
+if(recruit.usc > score){
+
+winner="USC";
+score=recruit.usc;
+
+}
+
+if(recruit.osu > score){
+
+winner="Ohio State";
+score=recruit.osu;
+
+}
+
+if(winner==="Oregon"){
+
+commits.push(recruit.name);
+
+let stars = (recruit.name.match(/⭐/g)||[]).length;
+
+classScore += stars * 10;
 
 log(
 "<span class='commit'>✅ BOOM! "
-+ r.name +
-" committed to Oregon.</span>"
++
+recruit.name +
+" committed to Oregon!</span>"
 );
-}
-else
-{
-let rivals=[
-"USC",
-"Ohio State",
-"Texas",
-"Washington"
-];
 
-let rival=
-rivals[random(0,rivals.length-1)];
+}else{
 
 log(
 "<span class='loss'>❌ "
-+ r.name +
++
+recruit.name +
 " committed to "
-+ rival +
++
+winner +
 "</span>"
 );
+
 }
 
-current++;
+index++;
 
-setTimeout(loadRecruit,400);
+setTimeout(loadRecruit,1500);
+
 }
 
-function finishClass()
-{
-document.getElementById("buttons").style.display="none";
+function finishClass(){
 
-let ranking;
-
-if(classPoints>=40)
-ranking="#1 Class - Dynasty Mode";
-else if(classPoints>=35)
-ranking="Top 3 Class";
-else if(classPoints>=30)
-ranking="Top 10 Class";
-else if(classPoints>=20)
-ranking="Solid Class";
-else
-ranking="Time to Fire Up the Transfer Portal";
-
-document.querySelector(".card").innerHTML=
+document.body.innerHTML +=
 `
+<div class="card">
+
 <h2>National Signing Day</h2>
 
-<p><b>Signed:</b> ${signed.length} recruits</p>
+<p><strong>Commits:</strong> ${commits.length}</p>
 
-<p><b>Class Score:</b> ${classPoints}</p>
+<p><strong>Class Score:</strong> ${classScore}</p>
 
-<p><b>Result:</b> ${ranking}</p>
+<p><strong>National Ranking:</strong> ${rankClass()}</p>
 
 <button onclick="location.reload()">
 Start New Class
 </button>
+
+</div>
 `;
 
-log("📣 Recruiting cycle complete.");
+}
+
+function rankClass(){
+
+if(classScore >= 350)
+return "#1 Class - Dynasty Mode";
+
+if(classScore >= 250)
+return "Top 5 Class";
+
+if(classScore >= 180)
+return "Top 10 Class";
+
+if(classScore >= 120)
+return "Top 25 Class";
+
+return "Transfer Portal Time";
+
 }
 
 updateResources();
