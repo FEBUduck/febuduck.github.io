@@ -6,17 +6,39 @@ subtitle: Fans first. Ducks always.
 
 <style>
 
-/* ENTIRE GAME AREA */
+/* =========================
+   WHOLE PAGE BACKGROUND
+========================= */
+
+html,
+body,
+.page-content,
+.main-content,
+.main,
+.page,
+.container,
+.wrapper,
+.content,
+.site-content,
+.page__content{
+    background:#013220 !important;
+}
+
+/* =========================
+   GAME WRAPPER
+========================= */
 
 .sim-wrapper{
-    max-width:1100px;
+
+    max-width:1200px;
+
     margin:20px auto;
 
     background:linear-gradient(
         180deg,
-        #013220,
-        #024731,
-        #0b4f33
+        #013220 0%,
+        #024731 50%,
+        #0b4f33 100%
     );
 
     padding:25px;
@@ -28,12 +50,14 @@ subtitle: Fans first. Ducks always.
     box-shadow:
         0 0 25px rgba(254,225,35,.35);
 
-    min-height:80vh;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .sim-header{
+
     text-align:center;
 
     background:#FEE123;
@@ -49,12 +73,34 @@ subtitle: Fans first. Ducks always.
     border-radius:10px;
 
     margin-bottom:20px;
+
 }
 
-/* CARDS */
+/* =========================
+   TITLE
+========================= */
+
+.sim-title{
+
+    text-align:center;
+
+    color:#FEE123 !important;
+
+    font-size:48px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+/* =========================
+   CARDS
+========================= */
 
 .sim-card{
-    background:#0b4f33;
+
+    background:#0b5c39;
 
     color:white;
 
@@ -64,10 +110,11 @@ subtitle: Fans first. Ducks always.
 
     margin-bottom:20px;
 
-    border:1px solid rgba(254,225,35,.4);
+    border:1px solid rgba(254,225,35,.45);
+
 }
 
-/* FORCE TEXT COLORS */
+/* Force all text white */
 
 .sim-card,
 .sim-card div,
@@ -75,85 +122,115 @@ subtitle: Fans first. Ducks always.
 .sim-card p,
 .sim-card h2,
 .sim-card h3{
+
     color:white !important;
+
 }
 
-/* PAGE TITLE */
+/* =========================
+   RESOURCE LABELS
+========================= */
 
-.sim-title{
-    text-align:center;
+.stat-label{
 
     color:#FEE123 !important;
-
-    font-size:42px;
-}
-
-/* RECRUIT NAME */
-
-#recruit-name{
-    font-size:32px;
 
     font-weight:bold;
 
-    color:#FEE123 !important;
 }
 
-/* BUTTONS */
+/* =========================
+   RECRUIT NAME
+========================= */
+
+#recruit-name{
+
+    color:#FEE123 !important;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+/* =========================
+   SCORE COLORS
+========================= */
+
+#oregon-score{
+
+    color:#7CFC00 !important;
+
+    font-weight:bold;
+
+    font-size:1.1em;
+
+}
+
+#usc-score{
+
+    color:#ff9999 !important;
+
+    font-weight:bold;
+
+}
+
+#osu-score{
+
+    color:#ffd0d0 !important;
+
+    font-weight:bold;
+
+}
+
+#texas-score{
+
+    color:#ffb07b !important;
+
+    font-weight:bold;
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
 
 .sim-btn{
-    background:#FEE123;
 
-    border:none;
+    background:#FEE123;
 
     color:#024731;
 
-    padding:12px;
+    border:none;
+
+    padding:12px 16px;
 
     margin:5px;
 
-    border-radius:6px;
+    border-radius:8px;
 
     cursor:pointer;
 
     font-weight:bold;
+
+    transition:.2s ease;
+
 }
 
 .sim-btn:hover{
+
     opacity:.9;
+
+    transform:translateY(-1px);
+
 }
 
-/* SCORES */
-
-#oregon-score{
-    color:#7CFC00 !important;
-    font-weight:bold;
-}
-
-#usc-score{
-    color:#ff9999 !important;
-    font-weight:bold;
-}
-
-#osu-score{
-    color:#ffc9c9 !important;
-    font-weight:bold;
-}
-
-#texas-score{
-    color:#ffb07b !important;
-    font-weight:bold;
-}
-
-/* RESOURCES */
-
-.stat-label{
-    color:#FEE123 !important;
-    font-weight:bold;
-}
-
-/* LOG */
+/* =========================
+   NEWS LOG
+========================= */
 
 #sim-log{
+
     background:#111;
 
     color:#ddd !important;
@@ -167,22 +244,39 @@ subtitle: Fans first. Ducks always.
     overflow-y:auto;
 
     border:1px solid #444;
+
 }
 
-/* COMMITS */
+/* =========================
+   COMMITS
+========================= */
 
 .commit{
+
     color:#59ff59 !important;
 
     font-weight:bold;
 
     font-size:18px;
+
 }
 
 .loss{
+
     color:#ff7878 !important;
 
     font-weight:bold;
+
+}
+
+/* =========================
+   SIGNING DAY
+========================= */
+
+#signing-day{
+
+    background:#0b5c39;
+
 }
 
 </style>
