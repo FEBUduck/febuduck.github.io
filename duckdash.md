@@ -948,6 +948,21 @@ function evaluateRecruit(r)
     ];
 }
 
+   function getNationalRanking()
+{
+    if(classScore >= 500) return "#1";
+    if(classScore >= 450) return "#2";
+    if(classScore >= 400) return "#3";
+    if(classScore >= 350) return "#5";
+    if(classScore >= 300) return "#8";
+    if(classScore >= 250) return "#12";
+    if(classScore >= 200) return "#18";
+    if(classScore >= 150) return "#25";
+
+    return "Unranked";
+}
+
+
 function getEnding()
 {
     if(classScore>=500)
@@ -1002,19 +1017,47 @@ function finishClass()
 
     html+="<ul>";
 
-    signedPlayers.forEach(p =>
+  signedPlayers.forEach(p =>
+{
+    let flipChance = 0.10;
+
+    if(p.legendary)
+    {
+        flipChance = 0.03;
+    }
+
+    if(Math.random() < flipChance)
+    {
+        const school =
+            ["Texas","USC","Ohio State"][
+                Math.floor(Math.random()*3)
+            ];
+
+        html +=
+            "<li>💔 " +
+            p.name +
+            " flipped to " +
+            school +
+            " on Signing Day!</li>";
+    }
+    else
     {
         html +=
-        "<li>"+
-        p.name+
-        " - "+
-        evaluateRecruit(p)+
-        "</li>";
-    });
+            "<li>" +
+            p.name +
+            " - " +
+            evaluateRecruit(p) +
+            "</li>";
+    }
+});
 
     html+="</ul>";
 
-    html+="<h3>Class Score: "+classScore+"</h3>";
+    html+="<h3>🏆 National Ranking: "+getNationalRanking()+"</h3>";
+
+html+="<h3>⭐ Commits: "+totalCommits+"/5</h3>";
+
+html+="<h3>Class Score: "+classScore+"</h3>";
 
     html+=getEnding();
 
