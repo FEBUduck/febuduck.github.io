@@ -399,7 +399,7 @@ Actions Remaining:
 const FIRST_NAMES = [
 "Jayden","Bryce","Wyatt","Jordan",
 "Cole","Caleb","Jackson","Ryan",
-"Aiden","Dante","Cam","Micah",
+"Aiden","Dante","Cam","Micah","Kellz","J.J.","Doug",
 "Jalen","Noah","Evan","Trey","Marcus",
 "Tyler","Connor","Mason","Jev","Granby","Dre","Niraj",
 "Dillon","Bo","Justin","Marcus",
