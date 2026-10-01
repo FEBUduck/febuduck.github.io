@@ -7,21 +7,23 @@ subtitle: Fans first. Ducks always.
 <style>
 
 .sim-card{
-    background:#0d5d3f;
+    background:#0b4f33;
+    color:white;
     padding:20px;
     border-radius:12px;
     margin-bottom:20px;
+    border:2px solid #FEE123;
 }
 
 .sim-title{
     text-align:center;
-    color:#FEE123;
+    color:#FEE123 !important;
 }
 
 .sim-btn{
     background:#FEE123;
     border:none;
-    color:black;
+    color:#024731;
     padding:12px;
     margin:5px;
     border-radius:6px;
@@ -33,49 +35,90 @@ subtitle: Fans first. Ducks always.
     opacity:.9;
 }
 
+#recruit-name{
+    font-size:32px;
+    font-weight:bold;
+    color:#FEE123 !important;
+}
+
+.sim-card,
+.sim-card div,
+.sim-card span,
+.sim-card p,
+.sim-card h2,
+.sim-card h3{
+    color:white !important;
+}
+
+#oregon-score{
+    color:#7CFC00 !important;
+    font-weight:bold;
+}
+
+#usc-score{
+    color:#ff9b9b !important;
+    font-weight:bold;
+}
+
+#osu-score{
+    color:#ffc9c9 !important;
+    font-weight:bold;
+}
+
+#texas-score{
+    color:#ffb07b !important;
+    font-weight:bold;
+}
+
 #sim-log{
     background:#111;
+    color:#e6e6e6 !important;
     padding:15px;
     border-radius:8px;
     height:250px;
     overflow-y:auto;
-}
-
-#recruit-name{
-    font-size:28px;
-    color:#FEE123;
+    border:1px solid #444;
 }
 
 .commit{
-    color:#6cff6c;
+    color:#59ff59 !important;
+    font-weight:bold;
+    font-size:18px;
 }
 
 .loss{
-    color:#ff6666;
+    color:#ff7878 !important;
+    font-weight:bold;
 }
+
+.stat-label{
+    color:#FEE123 !important;
+    font-weight:bold;
+}
+
 
 </style>
 
-<h1 class="sim-title">🦆 FEBU Ducks Recruiting Simulator</h1>
+<h1 class="sim-title">🦆 FEBU Ducks Recruiting Simulator 🦆</h1>
 
 <div class="sim-card">
 
-💰 NIL:
+<span class="stat-label">💰 NIL:</span>
 <span id="nil">100</span>
 
 &nbsp;&nbsp;&nbsp;
 
-🏠 Coach Time:
+<span class="stat-label">🏠 Coach Time:</span>
 <span id="coach">20</span>
 
 &nbsp;&nbsp;&nbsp;
 
-✈️ Visits:
+<span class="stat-label">✈️ Visits:</span>
 <span id="visits">6</span>
 
 &nbsp;&nbsp;&nbsp;
 
-🎓 Scholarships:
+<span class="stat-label">🎓 Scholarships:</span>
 <span id="scholarships">5</span>
 
 </div>
