@@ -392,7 +392,10 @@ Actions Remaining:
 </div>
 
 <div id="signing-day" class="sim-card" style="display:none;"></div>
+
 </div> <!-- closes sim-wrapper -->
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
 <script>
 
@@ -943,12 +946,19 @@ function finishClass()
 
     html+=getEnding();
 
-    html+=`
-    <br><br>
-    <button class="sim-btn" onclick="location.reload()">
-    Start New Recruiting Class
-    </button>
-    `;
+   html+=`
+<br><br>
+
+<button class="sim-btn"
+        onclick="saveClassImage()">
+📸 Save Recruiting Class
+</button>
+
+<button class="sim-btn"
+        onclick="location.reload()">
+🔄 Start New Recruiting Class
+</button>
+`;
 
     document.getElementById("signing-day").innerHTML=
         html;
@@ -965,6 +975,26 @@ function loadRecruit()
     currentRecruit=recruits[recruitIndex];
 
     updateRecruitDisplay();
+}
+
+   function saveClassImage()
+{
+    const card =
+        document.getElementById("signing-day");
+
+    html2canvas(card).then(canvas =>
+    {
+        const link =
+            document.createElement("a");
+
+        link.download =
+            "febu-recruiting-class.png";
+
+        link.href =
+            canvas.toDataURL("image/png");
+
+        link.click();
+    });
 }
 
 for(let i=0;i<30;i++)
