@@ -400,29 +400,30 @@ const FIRST_NAMES = [
 "Jayden","Bryce","Wyatt","Jordan",
 "Cole","Caleb","Jackson","Ryan",
 "Aiden","Dante","Cam","Micah",
-"Jalen","Noah","Evan","Trey"
+"Jalen","Noah","Evan","Trey","Marcus",
+"Tyler","Connor","Mason","Jev","Granby","Dre","Niraj",
+"Dillon","Bo","Justin","Marcus",
+"Derrick","Tanner","Dillon","Marcus","Troy","Joey"
 ];
 
 const LAST_NAMES = [
-"Johnson","Brown","Smith","Rourke",
-"Vaughn","Taylor","Wilson","Miller",
-"Jackson","Harris","Williams",
-"Carter","Donald"
+"Johnson","Brown","Smith","Rourke","Vaughn",
+"Taylor","Wilson","Miller","Jackson","Harris",
+"Williams","Carter","Morgan","Walker","Davis",
+"Thomas","Moore","Anderson","White","Martin",
+"Thompson","Clark","Lewis","Young","Allen","King",
+"Scott","Green","Baker","Hall","Turner","Hayes"
 ];
 
 const LEGENDARY_NAMES = [
-    "Mariota",
-    "Barner",
-    "Herbert",
-    "Dixon",
-    "Stewart",
-    "Nix",
-    "Quackston"
+    "Mariota","Barner","Herbert","Ngata",
+    "Belotti","Chung","Nix","Sewell","Wilcox",
+    "Quackston","Autzenson"
 ];
    
 const POSITIONS = [
 "QB","RB","WR","TE","OT",
-"EDGE","DL","LB","CB","S"
+"EDGE","DL","LB","CB","S","ATH"
 ];
 
 const INTERESTS = [
