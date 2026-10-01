@@ -9,11 +9,14 @@ subtitle: Fans first. Ducks always.
 /* ENTIRE GAME AREA */
 
 .sim-wrapper{
+    max-width:1100px;
+    margin:20px auto;
+
     background:linear-gradient(
         180deg,
-        #013220 0%,
-        #024731 50%,
-        #0b4f33 100%
+        #013220,
+        #024731,
+        #0b4f33
     );
 
     padding:25px;
@@ -23,9 +26,9 @@ subtitle: Fans first. Ducks always.
     border:3px solid #FEE123;
 
     box-shadow:
-        0 0 25px rgba(254,225,35,.25);
+        0 0 25px rgba(254,225,35,.35);
 
-    margin-top:20px;
+    min-height:80vh;
 }
 
 /* HEADER */
