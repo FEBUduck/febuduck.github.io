@@ -860,20 +860,92 @@ function skipRecruit()
 
 function evaluateRecruit(r)
 {
-    switch(r.potential)
+    if(r.legendary)
     {
-        case "elite":
-            return "⭐⭐⭐⭐⭐ Gem";
+        const legendaryOutcomes = [
+            "🐐 Ducks Mount Rushmore",
+            "🏆 National Champion",
+            "🏆 Heisman Winner",
+            "🏆 Program Legend",
+            "🏆 Statue Outside Autzen",
+            "🏆 Number Retired",
+            "🏆 First Ballot Hall of Fame",
+            "🏆 Greatest Duck Of His Era"
+        ];
 
-        case "good":
-            return "Future Starter";
-
-        case "average":
-            return "Solid Contributor";
-
-        default:
-            return "Transferred After One Season";
+        return legendaryOutcomes[
+            Math.floor(Math.random()*legendaryOutcomes.length)
+        ];
     }
+
+    if(r.potential === "elite")
+    {
+        const eliteOutcomes = [
+            "🏆 All-American",
+            "🏆 First Round Draft Pick",
+            "🏆 Ducks Legend",
+            "🏆 Heisman Finalist",
+            "🏆 Ring of Honor",
+            "🏆 NFL Pro Bowler",
+            "🏆 School Record Holder",
+            "🏆 Hall of Fame Candidate"
+        ];
+
+        return eliteOutcomes[
+            Math.floor(Math.random()*eliteOutcomes.length)
+        ];
+    }
+
+    if(r.potential === "good")
+    {
+        const goodOutcomes = [
+            "✅ Team Captain",
+            "✅ Multi-Year Starter",
+            "✅ Fan Favorite",
+            "✅ All-Conference Selection",
+            "✅ Reliable Starter",
+            "✅ Defensive Leader",
+            "✅ Offensive Playmaker",
+            "✅ Beloved by Duck Fans"
+        ];
+
+        return goodOutcomes[
+            Math.floor(Math.random()*goodOutcomes.length)
+        ];
+    }
+
+    if(r.potential === "average")
+    {
+        const averageOutcomes = [
+            "👍 Valuable Depth Piece",
+            "👍 Spot Starter",
+            "👍 Quality Contributor",
+            "👍 Special Teams Ace",
+            "👍 Rotation Player",
+            "👍 Reliable Backup",
+            "👍 Practice Legend",
+            "👍 Occasional Starter"
+        ];
+
+        return averageOutcomes[
+            Math.floor(Math.random()*averageOutcomes.length)
+        ];
+    }
+
+    const bustOutcomes = [
+        "🚪 Entered Transfer Portal",
+        "🚪 Left After Spring Game",
+        "🚪 Buried On Depth Chart",
+        "🚪 Justin Flowe's plus 1",
+        "🚪 Dissappeared with Niraj's GF",
+        "🚪 Injury Problems",
+        "🚪 Transferred To A Rival",
+        "🚪 Waiting on a Spanish Test"
+    ];
+
+    return bustOutcomes[
+        Math.floor(Math.random()*bustOutcomes.length)
+    ];
 }
 
 function getEnding()
