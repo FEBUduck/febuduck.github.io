@@ -320,7 +320,12 @@ text-shadow:
 <span id="commit-count">0</span>/5
  
 &nbsp;&nbsp;&nbsp;
-
+ 
+<span class="stat-label">📅 Until Signing Day:</span>
+<span id="recruits-left">30</span>
+ 
+&nbsp;&nbsp;&nbsp;
+ 
 <span class="stat-label">🎓 Scholarships:</span>
 <span id="scholarships">5</span>
 
@@ -576,6 +581,9 @@ function updateResources()
 
     document.getElementById("commit-count").innerText =
         totalCommits;
+
+    document.getElementById("recruits-left").innerText =
+        recruits.length - recruitIndex;
 }
 
 function updateRecruitDisplay()
