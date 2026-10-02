@@ -628,9 +628,9 @@ function updateRecruitDisplay()
 
 function rivalRecruiting()
 {
-    currentRecruit.usc += random(2,8);
-    currentRecruit.osu += random(2,8);
-    currentRecruit.texas += random(2,8);
+    currentRecruit.usc += random(4,10);
+    currentRecruit.osu += random(4,10);
+    currentRecruit.texas += random(4,10);
 }
 
 function random(min,max)
