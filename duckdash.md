@@ -441,6 +441,16 @@ const INTERESTS = [
 "visit"
 ];
 
+ const COMMIT_MESSAGES = [
+"shut down recruitment and committed to Oregon!",
+"cancelled all remaining visits!",
+"picked the Ducks over the field!",
+"is officially all in for Oregon!",
+"called Dan Lanning with the good news!",
+"ended the recruiting battle early!",
+"committed on the spot!"
+];  
+
 let scholarships = 5;
 let nilBudget = 100;
 let coachTime = 20;
@@ -772,25 +782,96 @@ function useAction(type)
         break;
     }
 
-    currentRecruit.oregon += gain;
+currentRecruit.oregon += gain;
 
-    currentRecruit.actions--;
+currentRecruit.actions--;
 
-    rivalRecruiting();
+rivalRecruiting();
 
-    triggerEvent();
+triggerEvent();
 
-    updateResources();
-    updateRecruitDisplay();
+if(currentRecruit.stars === 5)
+{
+    if(currentRecruit.oregon >= 125)
+    {
+        earlyCommit();
+        return;
+    }
+}
+else if(currentRecruit.stars === 4)
+{
+    if(currentRecruit.oregon >= 105)
+    {
+        earlyCommit();
+        return;
+    }
+}
+else
+{
+    if(currentRecruit.oregon >= 90)
+    {
+        earlyCommit();
+        return;
+    }
+}
 
-    log("✅ Oregon gained +" + gain);
+updateResources();
+updateRecruitDisplay();
+
+log("✅ Oregon gained +" + gain);
 
     if(currentRecruit.actions===0)
     {
         setTimeout(commitDecision,500);
     }
 }
+function earlyCommit()
+{
+    signedPlayers.push(currentRecruit);
 
+    totalCommits++;
+
+    scholarships--;
+
+    if(currentRecruit.stars === 5)
+        classScore += 100;
+    else if(currentRecruit.stars === 4)
+        classScore += 50;
+    else
+        classScore += 25;
+
+ updateResources();
+
+log(
+    "📰 RECRUITING ALERT: " +
+    currentRecruit.name +
+    " has made a decision."
+);
+
+const message =
+    COMMIT_MESSAGES[
+        Math.floor(Math.random()*COMMIT_MESSAGES.length)
+    ];
+
+log(
+    "<span class='commit'>🚨 EARLY COMMIT! " +
+    currentRecruit.name +
+    " " +
+    message +
+    "</span>"
+);
+   
+    recruitIndex++;
+
+    if(scholarships <= 0)
+    {
+        finishClass();
+        return;
+    }
+
+    loadRecruit();
+}
+   
 function commitDecision()
 {
     let winner="Oregon";
