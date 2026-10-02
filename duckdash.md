@@ -1044,12 +1044,43 @@ function finishClass()
                 Math.floor(Math.random()*3)
             ];
 
-        html +=
-            "<li>💔 " +
-            p.name +
-            " flipped to " +
-            school +
-            " on Signing Day!</li>";
+        if(p.legendary)
+        {
+            classScore -= 150;
+        }
+        else if(p.stars === 5)
+        {
+            classScore -= 100;
+        }
+        else if(p.stars === 4)
+        {
+            classScore -= 50;
+        }
+        else
+        {
+            classScore -= 25;
+        }
+
+        totalCommits--;
+
+        if(p.legendary)
+        {
+            html +=
+                "<li>🚨💔 " +
+                p.name +
+                " SHOCKINGLY flipped to " +
+                school +
+                " on Signing Day!</li>";
+        }
+        else
+        {
+            html +=
+                "<li>💔 " +
+                p.name +
+                " flipped to " +
+                school +
+                " on Signing Day!</li>";
+        }
     }
     else
     {
