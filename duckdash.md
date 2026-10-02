@@ -628,9 +628,9 @@ function updateRecruitDisplay()
 
 function rivalRecruiting()
 {
-    currentRecruit.usc += random(4,10);
-    currentRecruit.osu += random(4,10);
-    currentRecruit.texas += random(4,10);
+    currentRecruit.usc += random(8,15);
+    currentRecruit.osu += random(8,15);
+    currentRecruit.texas += random(8,15);
 }
 
 function random(min,max)
@@ -646,8 +646,8 @@ function triggerEvent()
     const events=[
 
     function(){
-        currentRecruit.oregon+=20;
-        log("🦆 Dan Lanning visited. +20 Oregon");
+        currentRecruit.oregon+=10;
+        log("🦆 Dan Lanning visited. +10 Oregon");
     },
 
     function(){
@@ -702,7 +702,7 @@ function useAction(type)
             gain=random(5,10);
 
             if(currentRecruit.likes==="nike")
-                gain+=15;
+                gain+=10;
 
         break;
 
@@ -727,7 +727,7 @@ function useAction(type)
             gain=random(10,20);
 
             if(currentRecruit.likes==="nil")
-                gain+=20;
+                gain+=10;
 
         break;
 
@@ -752,7 +752,7 @@ function useAction(type)
             gain=random(10,20);
 
             if(currentRecruit.likes==="coach")
-                gain+=20;
+                gain+=10;
 
         break;
 
@@ -777,7 +777,7 @@ function useAction(type)
             gain=random(10,20);
 
             if(currentRecruit.likes==="visit")
-                gain+=20;
+                gain+=12;
 
         break;
     }
@@ -792,7 +792,7 @@ triggerEvent();
 
 if(currentRecruit.stars === 5)
 {
-    if(currentRecruit.oregon >= 125)
+    if(currentRecruit.oregon >= 155)
     {
         earlyCommit();
         return;
@@ -800,7 +800,7 @@ if(currentRecruit.stars === 5)
 }
 else if(currentRecruit.stars === 4)
 {
-    if(currentRecruit.oregon >= 105)
+    if(currentRecruit.oregon >= 115)
     {
         earlyCommit();
         return;
@@ -808,7 +808,7 @@ else if(currentRecruit.stars === 4)
 }
 else
 {
-    if(currentRecruit.oregon >= 90)
+    if(currentRecruit.oregon >= 95)
     {
         earlyCommit();
         return;
