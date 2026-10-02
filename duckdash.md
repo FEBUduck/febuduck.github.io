@@ -854,14 +854,17 @@ updateResources();
     }
 
     recruitIndex++;
+   updateResources();
     loadRecruit();
 }
 
 function skipRecruit()
 {
-    log("⏭ Passed on "+currentRecruit.name);
+    log("⏭ Passed on " + currentRecruit.name);
 
     recruitIndex++;
+
+    updateResources();
 
     loadRecruit();
 }
