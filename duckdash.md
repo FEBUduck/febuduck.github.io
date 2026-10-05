@@ -670,6 +670,21 @@ function triggerEvent()
         log("🏟 Recruit loved Autzen at night. +15 Oregon");
     },
 
+       function(){
+currentRecruit.oregon -= 25;
+log("🚨 JHop caught in Recruits sisters' DM's. -25 Oregon");
+},
+  
+       function(){
+currentRecruit.oregon -= 15;
+log("🚨 Recruits Family took the bus with DuckZone503. -15 Oregon");
+},
+       
+function(){
+currentRecruit.oregon -= 15;
+log("🌯 A mysterious burrito incident damaged relations. -15 Oregon");
+},
+
     function(){
         currentRecruit.oregon-=10;
         log("😬 Recruit watched Oklahoma State tape. -10 Oregon");
@@ -904,10 +919,11 @@ function commitDecision()
         score=currentRecruit.osu;
     }
 
-    if(currentRecruit.texas>score)
-    {
-        winner="Texas";
-    }
+if(currentRecruit.texas > score)
+{
+    winner = "Texas";
+    score = currentRecruit.texas;
+}
 
     if(winner==="Oregon")
     {
@@ -938,16 +954,29 @@ updateResources();
             return;
         }
     }
-    else
-    {
-        log(
-            "<span class='loss'>❌ "+
-            currentRecruit.name+
-            " committed to "+
-            winner+
-            "</span>"
-        );
-    }
+   else
+{
+   if(currentRecruit.usedNIL)
+{
+let refund = random(10,20);
+ 
+nilBudget += refund;
+ 
+log(
+"💰 NIL collective recovered $" +
+refund +
+"M from unused commitments."
+);
+}
+
+    log(
+        "<span class='loss'>❌ " +
+        currentRecruit.name +
+        " committed to " +
+        winner +
+        "</span>"
+    );
+}
 
     recruitIndex++;
    updateResources();
@@ -1046,6 +1075,22 @@ r.name.includes("J.J.")
 {
 return "🚪 Cut from the team due to uncontrollable weight gain";
 }
+
+if(
+    r.potential === "bust" &&
+    r.name.includes("Doug")
+)
+{
+    return "🚪 Accidentally became a full-time golf influencer";
+}
+   
+   if(
+r.potential === "bust" &&
+r.name.includes("Kellz")
+)
+{
+return "🚪 Ran away with a Big Booty Latina and never reported to fall camp";
+}
    
     const bustOutcomes = [
         "🚪 Entered Transfer Portal",
@@ -1056,16 +1101,13 @@ return "🚪 Cut from the team due to uncontrollable weight gain";
         "🚪 Injury Problems",
         "🚪 Transferred To A Rival",
         "🚪 Waiting on a Spanish Test",
-        "🚪 Fell of a Scooter and missed Freshman year and transferred"
+        "🚪 Fell off a Scooter and missed Freshman year and transferred"
     ];
 
    return bustOutcomes[
 Math.floor(Math.random()*bustOutcomes.length)
 ];
 
-    return bustOutcomes[
-        Math.floor(Math.random()*bustOutcomes.length)
-    ];
 }
 
    function getNationalRanking()
@@ -1138,9 +1180,11 @@ function finishClass()
     html+="<ul>";
 
    // 5% chance Oregon lands a surprise Signing Day flip
-
+   
 if(Math.random() < 0.05)
 {
+    const isLegendary = Math.random() < 0.25;
+
     const flipRecruit = {
         name:
             "⭐⭐⭐⭐⭐ " +
@@ -1151,20 +1195,29 @@ if(Math.random() < 0.05)
             LAST_NAMES[Math.floor(Math.random()*LAST_NAMES.length)],
 
         stars: 5,
-        potential: Math.random() < 0.25 ? "legendary" : "elite"
+        potential: "elite",
+        legendary: isLegendary,
+        signingDayFlip: true
     };
 
     signedPlayers.push(flipRecruit);
 
     totalCommits++;
 
-    classScore += 100;
+    if(isLegendary)
+    {
+        classScore += 150;
+    }
+    else
+    {
+        classScore += 100;
+    }
 
     html +=
         "<li>🦆💣 SIGNING DAY SHOCKER! " +
         flipRecruit.name +
         " flipped to Oregon on Signing Day! " +
-        "FEBU Discord called this and a burrito has disappeared. 🌯</li>";
+        "FEBU Discord called this and a burrito has mysteriously disappeared. 🌯</li>";
 }
    
   signedPlayers.forEach(p =>
@@ -1176,7 +1229,7 @@ if(Math.random() < 0.05)
         flipChance = 0.03;
     }
 
-    if(Math.random() < flipChance)
+   if(!p.signingDayFlip && Math.random() < flipChance)
     {
         const school =
             ["Texas","USC","Ohio State"][
