@@ -16,7 +16,7 @@ author: HighFi
 
 The Ducks enjoyed a relatively uneventful bye week. One thing we did get was a sharp new uniform reveal. Oregon rarely misses when it comes to jerseys, and this latest look is no exception. Now we just have to see how it looks under the lights on game day. Some uniforms look great in photos, but the real test is how they look on television. Just don't check out the Fan Jersey theyre trying to sell.
 
-![Origin of Speed](https://youtu.be/4kwh9nUQyNg?si=XJVZqeU5z6wW21RO)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4kwh9nUQyNg?si=0H3OJu1QEJ5Ejlu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Dante Moore Update
 
