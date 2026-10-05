@@ -67,6 +67,19 @@ The matchup that could close the gap is Indiana vs. Nebraska  could someone take
 
 [Official Standings](https://febuducks.com/standings/)
 
+| Friday, October 9          | Time (ET) | TV/Mobile       |
+|----------------------------|-----------|-----------------|
+| Iowa at Washington         | 9:00pm    | FOX or FS1      |
+| ****                       |           |                 |
+| Saturday, October 3        | Time (ET) | TV/Mobile       |
+| Indiana at Nebraska        | 12:00pm   | FOX             |
+| Ball State at Northwestern | 12:30pm   | BTN             |
+| UCLA at Oregon             | 3:30pm    | CBS/Paramount+  |
+| Illinois at Michigan State | 3:30pm    | FS1             |
+| Maryland at Ohio State     | 4:15pm    | BTN             |
+| USC at Penn State          | 7:30pm    | NBC/Peacock     |
+| Minnesota at Purdue        | 8:00pm    | BTN             |
+
 ### Week 6 Predictions
 <iframe 
     src="https://docs.google.com/forms/d/e/1FAIpQLScqN0mFiCi_MAEx7-bJHgtq12PITV7Xdtw_nEDqSwFvVKxP7Q/viewform?embedded=true" 
