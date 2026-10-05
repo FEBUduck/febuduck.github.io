@@ -790,9 +790,18 @@ rivalRecruiting();
 
 triggerEvent();
 
+let rivalLeader = Math.max(
+    currentRecruit.usc,
+    currentRecruit.osu,
+    currentRecruit.texas
+);
+
 if(currentRecruit.stars === 5)
 {
-    if(currentRecruit.oregon >= 155)
+    if(
+        currentRecruit.oregon >= 155 &&
+        currentRecruit.oregon >= rivalLeader + 10
+    )
     {
         earlyCommit();
         return;
@@ -800,7 +809,10 @@ if(currentRecruit.stars === 5)
 }
 else if(currentRecruit.stars === 4)
 {
-    if(currentRecruit.oregon >= 115)
+    if(
+        currentRecruit.oregon >= 115 &&
+        currentRecruit.oregon >= rivalLeader + 10
+    )
     {
         earlyCommit();
         return;
@@ -808,7 +820,10 @@ else if(currentRecruit.stars === 4)
 }
 else
 {
-    if(currentRecruit.oregon >= 95)
+    if(
+        currentRecruit.oregon >= 95 &&
+        currentRecruit.oregon >= rivalLeader + 10
+    )
     {
         earlyCommit();
         return;
@@ -1024,6 +1039,14 @@ function evaluateRecruit(r)
         ];
     }
 
+   if(
+r.potential === "bust" &&
+r.name.includes("J.J.")
+)
+{
+return "🚪 Cut from the team due to uncontrollable weight gain";
+}
+   
     const bustOutcomes = [
         "🚪 Entered Transfer Portal",
         "🚪 Left After Spring Game",
@@ -1032,8 +1055,13 @@ function evaluateRecruit(r)
         "🚪 Dissappeared with Niraj's GF",
         "🚪 Injury Problems",
         "🚪 Transferred To A Rival",
-        "🚪 Waiting on a Spanish Test"
+        "🚪 Waiting on a Spanish Test",
+        "🚪 Fell of a Scooter and missed Freshman year and transferred"
     ];
+
+   return bustOutcomes[
+Math.floor(Math.random()*bustOutcomes.length)
+];
 
     return bustOutcomes[
         Math.floor(Math.random()*bustOutcomes.length)
@@ -1109,6 +1137,36 @@ function finishClass()
 
     html+="<ul>";
 
+   // 5% chance Oregon lands a surprise Signing Day flip
+
+if(Math.random() < 0.05)
+{
+    const flipRecruit = {
+        name:
+            "⭐⭐⭐⭐⭐ " +
+            POSITIONS[Math.floor(Math.random()*POSITIONS.length)] +
+            " " +
+            FIRST_NAMES[Math.floor(Math.random()*FIRST_NAMES.length)] +
+            " " +
+            LAST_NAMES[Math.floor(Math.random()*LAST_NAMES.length)],
+
+        stars: 5,
+        potential: Math.random() < 0.25 ? "legendary" : "elite"
+    };
+
+    signedPlayers.push(flipRecruit);
+
+    totalCommits++;
+
+    classScore += 100;
+
+    html +=
+        "<li>🦆💣 SIGNING DAY SHOCKER! " +
+        flipRecruit.name +
+        " flipped to Oregon on Signing Day! " +
+        "FEBU Discord called this and a burrito has disappeared. 🌯</li>";
+}
+   
   signedPlayers.forEach(p =>
 {
     let flipChance = 0.10;
