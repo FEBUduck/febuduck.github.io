@@ -405,28 +405,29 @@ Actions Remaining:
 <script>
 
 const FIRST_NAMES = [
-"Jayden","Bryce","Wyatt","Jordan",
-"Cole","Caleb","Jackson","Ryan","Sir Gregory",
-"Aiden","Dante","Cam","Micah","Kellz","J.J.","Doug",
-"Jalen","Noah","Evan","Trey","Marcus",
-"Tyler","Connor","Mason","Jev","Granby","Dre","Niraj",
-"Dillon","Bo","Justin","Marcus",
-"Derrick","Tanner","Dillon","Marcus","Troy","Joey"
+"Jayden","Bryce","Wyatt","Jordan","Cole","Caleb","Jackson","Ryan","Sir Gregory",
+"Aiden","Dante","Cam","Micah","Kellz","J.J.","Doug","Jalen","Noah","Evan","Trey",
+"Tyler","Connor","Mason","Jev","Granby","Dre","Niraj","Bo","Justin","Marcus","Sir Gregory",
+"Derrick","Tanner","Dillon","Troy","Joey","Zayden","Malachi","Caden","Kaden","Deacon",
+"Braylon","Xavier","Kingston","Jaxon","Ashton","Ryder","Nico","Isaiah","Landon","Kobe","Kellz","J.J.","Doug",
+"Jace","Tatum","Cash","Maddox","Colton","Jev","Zeke","Braxton","Sawyer","Hudson","Roman","Granby","Dre","Niraj",
+"Kamari","Trevon","Keon","Jabari","Desmond"
 ];
 
 const LAST_NAMES = [
-"Johnson","Brown","Smith","Rourke","Vaughn",
-"Taylor","Wilson","Miller","Jackson","Harris",
-"Williams","Carter","Morgan","Walker","Davis",
-"Thomas","Moore","Anderson","White","Martin",
-"Thompson","Clark","Lewis","Young","Allen","King",
-"Scott","Green","Baker","Hall","Turner","Hayes"
+"Johnson","Brown","Smith","Rourke","Vaughn","Taylor","Wilson","Miller","Jackson","Harris",
+"Williams","Carter","Morgan","Walker","Davis","Thomas","Moore","Anderson","White","Martin",
+"Thompson","Clark","Lewis","Young","Allen","King","Scott","Green","Baker","Hall","Turner","Hayes",
+"Robinson","Mitchell","Parker","Simmons","Evans","Ford","Reed","Bell","Murphy","Cooper",
+"Powell","Perry","Bennett","Cook","Coleman","Henderson","Richardson","Jenkins","Brooks","Ward",
+"Stewart","Sanders","Price","Woodson","Graham","Foster","Owens","Daniels","Fields","Manning",
+"Prescott","Hunter","McCoy","Bishop","Hawkins","Pearson","Burton","Webb","Morris","Griffin",
+"Black","Stokes","Banks","Sullivan","Maddox","West","Irving","Fleming","Holloway","Cross"
 ];
 
 const LEGENDARY_NAMES = [
-    "Mariota","Barner","Herbert","Ngata",
-    "Belotti","Chung","Nix","Sewell","Wilcox",
-    "Quackston","Autzenson"
+    "Mariota","Barner","Herbert","Ngata","Harrington","Howry","Ducksworth",
+    "Belotti","Chung","Nix","Sewell","Wilcox","Mallard","Swoosh","Quackston","Autzenson"
 ];
    
 const POSITIONS = [
@@ -628,9 +629,9 @@ function updateRecruitDisplay()
 
 function rivalRecruiting()
 {
-    currentRecruit.usc += random(8,15);
-    currentRecruit.osu += random(8,15);
-    currentRecruit.texas += random(8,15);
+    currentRecruit.usc += random(8,21);
+    currentRecruit.osu += random(8,21);
+    currentRecruit.texas += random(8,21);
 }
 
 function random(min,max)
