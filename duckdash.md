@@ -1178,6 +1178,8 @@ function finishClass()
 
     let html="<h2>National Signing Day</h2>";
 
+let finalCommits = totalCommits;
+
     html+="<ul>";
 
    // 5% chance Oregon lands a surprise Signing Day flip
@@ -1254,7 +1256,7 @@ if(Math.random() < 0.05)
             classScore -= 25;
         }
 
-        totalCommits--;
+        finalCommits--;
 
         if(p.legendary)
         {
@@ -1290,7 +1292,7 @@ if(Math.random() < 0.05)
 
     html+="<h3>🏆 National Ranking: "+getNationalRanking()+"</h3>";
 
-html+="<h3>⭐ Commits: "+totalCommits+"/5</h3>";
+html+="<h3>⭐ Commits: "+finalCommits+"/5</h3>";
 
 html+="<h3>Class Score: "+classScore+"</h3>";
 
