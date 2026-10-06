@@ -849,7 +849,33 @@ else
 updateResources();
 updateRecruitDisplay();
 
-log("✅ Oregon gained +" + gain);
+let actionName = "";
+ 
+switch(type)
+{
+case "nike":
+actionName = "👟 Nike Pitch";
+break;
+ 
+case "nil":
+actionName = "💰 NIL Package";
+break;
+ 
+case "coach":
+actionName = "🏠 Home Visit";
+break;
+ 
+case "visit":
+actionName = "✈️ Official Visit";
+break;
+}
+ 
+log(
+"✅ " +
+actionName +
+" gained +" +
+gain
+);
 
     if(currentRecruit.actions===0)
     {
