@@ -1,12 +1,12 @@
 {
-  "kickoff": "2026-10-10 13:30:00",
-  "opponent": "UCLA",
-  "opponentLogo": "/assets/logos/UCLA.png",
+  "kickoff": "2026-10-17 23:00:00",
+  "opponent": "Nebraska",
+  "opponentLogo": "/assets/logos/Nebraska.png",
   "oregonLogo": "/assets/logos/oregon.png",
-  "date": "Saturday, Oct 10",
-  "time": "3:30 PM EDT",
-  "tv": "CBS / Paramount+",
-  "oregonRecord": "3–1",
-  "opponentRecord": "4–0",
-  "spread": "Oregon -12.5"
+  "date": "Saturday, Oct 17",
+  "time": "11:00 PM EDT",
+  "tv": "FOX",
+  "oregonRecord": "3–2",
+  "opponentRecord": "5–1",
+  "spread": "Oregon -7"
 }
