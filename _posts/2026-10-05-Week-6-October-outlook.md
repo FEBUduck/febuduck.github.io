@@ -86,4 +86,4 @@ The matchup that could close the gap is Indiana vs. Nebraska  could someone take
 
 ### Submissions
 
-![CCG](https://FEBUDucks.com/assets/img/preds/week4.png)
+![CCG](https://FEBUDucks.com/assets/img/preds/week6.png)
