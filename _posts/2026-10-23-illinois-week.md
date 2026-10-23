@@ -2,7 +2,7 @@
 layout: post
 title: The Most Important Game Nobody Cared About in August
 subtitle: Back in August, Oregon's trip to Illinois looked like a routine road game. Seven weeks later, it feels like a game that could determine where this season ends.
-cover-img: /assets/img/week08ban.jpg
+cover-img: /assets/img/week08ban.png
 thumbnail-img: /assets/img/week08th.png
 gh-repo: daattali/beautiful-jekyll
 gh-badge: []
