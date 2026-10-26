@@ -1,12 +1,12 @@
 {
-  "kickoff": "2026-10-24 15:00:00",
-  "opponent": "Illinois",
-  "opponentLogo": "/assets/logos/Illinois.png",
+  "kickoff": "2026-10-31 15:30:00",
+  "opponent": "Northwestern",
+  "opponentLogo": "/assets/logos/northwestern.png",
   "oregonLogo": "/assets/logos/oregon.png",
-  "date": "Saturday, Oct 24",
-  "time": "3:00 PM EDT",
-  "tv": "BTN",
-  "oregonRecord": "4–2",
-  "opponentRecord": "3–3",
-  "spread": "Oregon -10"
+  "date": "Saturday, Oct 31",
+  "time": "3:30 PM EDT",
+  "tv": "Peacock",
+  "oregonRecord": "4–3",
+  "opponentRecord": "6–1",
+  "spread": "Oregon -3.5"
 }
