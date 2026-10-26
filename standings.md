@@ -18,22 +18,22 @@ Here you’ll find:
 Whether you're fighting for the top spot or just trying not to finish last, this is where the story of the season takes shape. Check back every week to see how the madness unfolds.
 
 
-### 2026 SEASON - After week 7
+### 2026 SEASON - After week 8
 
 
-| Name           | Pts | Wins | Losses | Win  %  |
-|----------------|-----|------|--------|---------|
-| Kellz**        | 73  | 71   | 14     | 84%     |
-| Tyler**        | 68  | 66   | 19     | 78%     |
-| Lil Jev        | 66  | 66   | 18     | 79%     |
-| talesofderp    | 66  | 66   | 19     | 78%     |
-| HighFi         | 66  | 66   | 19     | 78%     |
-| Sco            | 65  | 65   | 20     | 76%     |
-| AgentPK        | 63  | 63   | 22     | 74%     |
-| Juicy Booty*   | 48  | 47   | 14     | 77%     |
-| Doug           | 2   | 2    | 1      | 67%     |
-| Granby         | 1   | 1    | 0      | 100%    |
-| bold and brash | 1   | 1    | 0      | 100%    |
-| DEEZ NUTZ      | 1   | 1    | 0      | 100%    |
-| Gemini AI      | 1   | 1    | 1      | 50%     |
-| xion1992       | 1   | 1    | 1      | 50%     |
+| Name           | Pts | Wins | Losses | Win  % |
+|----------------|-----|------|--------|--------|
+| Kellz*         | 69  | 68   | 16     | 81%    |
+| Sco*           | 68  | 66   | 17     | 80%    |
+| Tyler**        | 66  | 64   | 20     | 76%    |
+| Lil Jev        | 65  | 65   | 18     | 78%    |
+| talesofderp    | 64  | 64   | 20     | 76%    |
+| HighFi         | 64  | 64   | 20     | 76%    |
+| AgentPK        | 62  | 62   | 22     | 74%    |
+| Juicy Booty*   | 48  | 47   | 14     | 77%    |
+| Doug           | 2   | 2    | 1      | 67%    |
+| Granby         | 1   | 1    | 0      | 100%   |
+| bold and brash | 1   | 1    | 0      | 100%   |
+| DEEZ NUTZ      | 1   | 1    | 0      | 100%   |
+| Gemini AI      | 1   | 1    | 1      | 50%    |
+| xion1992       | 1   | 1    | 1      | 50%    |
