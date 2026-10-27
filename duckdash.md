@@ -382,6 +382,10 @@ Actions Remaining:
 ✈️ Official Visit
 </button>
 
+<button class="sim-btn" onclick="useAction('snake')">
+🐍 Snake Pitch
+</button>
+
 <button class="sim-btn" onclick="skipRecruit()">
 ⏭ Skip Recruit
 </button>
@@ -521,7 +525,8 @@ function generateRecruit()
             usedNike:false,
             usedNIL:false,
             usedCoach:false,
-            usedVisit:false
+            usedVisit:false,
+            usedSnake:false
 
         };
     }
@@ -571,7 +576,8 @@ function generateRecruit()
         usedNike:false,
         usedNIL:false,
         usedCoach:false,
-        usedVisit:false
+        usedVisit:false,
+        usedSnake:false
 
     };
 }
@@ -796,6 +802,81 @@ function useAction(type)
                 gain+=12;
 
         break;
+
+          case "snake":
+
+    if(currentRecruit.usedSnake)
+    {
+        log("🐍 Already used Snake Pitch.");
+        return;
+    }
+
+    currentRecruit.usedSnake = true;
+
+    let target =
+        ["usc","osu","texas"][
+            Math.floor(Math.random()*3)
+        ];
+
+    if(Math.random() < 0.75)
+    {
+        let loss = random(12,25);
+
+        currentRecruit[target] -= loss;
+
+        const snakeMessages = [
+
+            "Recruit questioned the rival's playing time.",
+
+            "Recruit heard concerns about coaching stability.",
+
+            "Recruit wasn't impressed with the rival campus.",
+
+            "Recruit worried about getting buried on the depth chart.",
+
+            "Recruit heard the rival fanbase booed Santa Claus.",
+           
+           "Recruit learned the rival's NIL package included coupons.",
+           
+           "Recruit found out the rival mascot lost a fight to Puddles.",
+           
+           "Recruit was shown a rival message board.",
+           
+           "Recruit found out the rival sells Pepsi products.",
+           
+           "Recruit learned the rival cafeteria ran out of chocolate milk.",
+
+            "Recruit heard the rival is an Adidas school.",
+
+            "Recruit learned the rival uniforms were designed by Washington fans."
+
+        ];
+
+        log(
+            "🐍 " +
+            snakeMessages[
+                Math.floor(Math.random()*snakeMessages.length)
+            ] +
+            " -" +
+            loss +
+            " " +
+            target.toUpperCase()
+        );
+    }
+    else
+    {
+        let penalty = random(5,12);
+
+        currentRecruit.oregon -= penalty;
+
+        log(
+            "😬 Recruit disliked the negativity. -" +
+            penalty +
+            " Oregon"
+        );
+    }
+
+break;
     }
 
 currentRecruit.oregon += gain;
@@ -868,19 +949,26 @@ break;
 case "visit":
 actionName = "✈️ Official Visit";
 break;
+
+case "snake":
+actionName = "🐍 Snake Pitch";
+break;
 }
  
-log(
-"✅ " +
-actionName +
-" gained +" +
-gain
-);
+if(type !== "snake")
+{
+    log(
+    "✅ " +
+    actionName +
+    " gained +" +
+    gain
+    );
+}
 
-    if(currentRecruit.actions===0)
-    {
-        setTimeout(commitDecision,500);
-    }
+if(currentRecruit.actions===0)
+{
+    setTimeout(commitDecision,500);
+}
 }
 function earlyCommit()
 {
