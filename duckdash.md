@@ -820,9 +820,10 @@ function useAction(type)
 
     if(Math.random() < 0.75)
     {
-        let loss = random(12,25);
+        let loss = random(10,20);
 
-        currentRecruit[target] -= loss;
+currentRecruit[target] -= loss;
+currentRecruit.oregon += loss;
 
         const snakeMessages = [
 
@@ -853,15 +854,18 @@ function useAction(type)
         ];
 
         log(
-            "🐍 " +
-            snakeMessages[
-                Math.floor(Math.random()*snakeMessages.length)
-            ] +
-            " -" +
-            loss +
-            " " +
-            target.toUpperCase()
-        );
+    "🐍 " +
+    snakeMessages[
+        Math.floor(Math.random()*snakeMessages.length)
+    ] +
+    " -" +
+    loss +
+    " " +
+    target.toUpperCase() +
+    " +" +
+    loss +
+    " Oregon"
+);
     }
     else
     {
