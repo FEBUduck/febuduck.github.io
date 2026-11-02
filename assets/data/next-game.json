@@ -1,12 +1,12 @@
 {
-  "kickoff": "2026-10-31 15:30:00",
+  "kickoff": "2026-11-07 15:30:00",
   "opponent": "Northwestern",
-  "opponentLogo": "/assets/logos/Northwestern.png",
+  "opponentLogo": "/assets/logos/osu.png",
   "oregonLogo": "/assets/logos/oregon.png",
-  "date": "Saturday, Oct 31",
-  "time": "3:30 PM EDT",
-  "tv": "Peacock",
-  "oregonRecord": "4–3",
-  "opponentRecord": "6–1",
-  "spread": "Oregon -3.5"
+  "date": "Saturday, Nov 7",
+  "time": "3:30 PM EST",
+  "tv": "CBS/Paramount+",
+  "oregonRecord": "5–3",
+  "opponentRecord": "6–2",
+  "spread": "Ohio State -6"
 }
