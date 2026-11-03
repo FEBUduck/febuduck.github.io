@@ -8,52 +8,20 @@ subtitle: All Ducks All Day, Everyday.
 
     <div id="scoreboard-widget"></div>
 
-    <div id="standings-widget">
-
-        <div class="febu-standings-card">
-
-            <h3>🏆 FEBU Pick'em</h3>
-
-            <div class="standings-note">
-                Sco tied Kellz this week 🚨
-            </div>
-
-            <div class="standings-row">
-                <span>1. Kellz</span>
-                <span>82</span>
-            </div>
-
-            <div class="standings-row">
-                <span>1. Sco</span>
-                <span>82</span>
-            </div>
-
-            <div class="standings-row">
-                <span>3. Tyler</span>
-                <span>80</span>
-            </div>
-
-            <div class="standings-row">
-                <span>4. AgentPK</span>
-                <span>79</span>
-            </div>
-
-            <div class="standings-row">
-                <span>5. HighFi</span>
-                <span>78</span>
-            </div>
-
-        </div>
-
-    </div>
+    <div id="standings-widget"></div>
 
 </div>
 
 <div id="febu-ticker">
-    <div class="ticker-label">🚨 FEBU ALERT</div>
+
+    <div class="ticker-label">
+        🚨 FEBU ALERT
+    </div>
+
     <div class="ticker-message">
         <span id="ticker-text"></span>
     </div>
+
 </div>
 
 <style>
@@ -110,6 +78,8 @@ subtitle: All Ducks All Day, Everyday.
     display:block;
 }
 
+/* Homepage Layout */
+
 .homepage-widgets{
 
     display:flex;
@@ -137,6 +107,8 @@ subtitle: All Ducks All Day, Everyday.
     width:320px;
 
 }
+
+/* Standings Card */
 
 .febu-standings-card{
 
@@ -191,10 +163,14 @@ subtitle: All Ducks All Day, Everyday.
     font-weight:600;
 
 }
-    
+
 </style>
 
 <script>
+
+/* ======================
+   GAME WIDGET
+====================== */
 
 fetch('/assets/data/next-game.json')
   .then(response => response.json())
@@ -207,64 +183,91 @@ fetch('/assets/data/next-game.json')
       const now = new Date();
       const diff = kickoff - now;
 
-      if (diff <= 0) {
-
-        const timer = document.getElementById('kickoff-timer');
-
-        if (timer) {
-          timer.classList.add("gameday-flash");
-        }
-
+      if (diff <= 0)
+      {
         return "GAME DAY!";
       }
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const days =
+          Math.floor(diff / (1000 * 60 * 60 * 24));
+
+      const hours =
+          Math.floor((diff / (1000 * 60 * 60)) % 24);
+
+      const minutes =
+          Math.floor((diff / (1000 * 60)) % 60);
 
       return `${days}d ${hours}h ${minutes}m`;
     }
 
     const widget = `
+
       <div class="scoreboard-widget">
 
         <div class="sb-countdown">
           Kickoff in:
-          <span id="kickoff-timer">${updateCountdown()}</span>
+          <span id="kickoff-timer">
+            ${updateCountdown()}
+          </span>
         </div>
 
         <div class="sb-header-row">
 
-          <img class="sb-logo-left"
-               src="${game.oregonLogo}"
-               alt="Oregon logo">
+          <img
+              class="sb-logo-left"
+              src="${game.oregonLogo}"
+              alt="Oregon">
 
           <div class="sb-header-center">
             OREGON vs ${game.opponent}
           </div>
 
-          <img class="sb-logo-right"
-               src="${game.opponentLogo}"
-               alt="${game.opponent} logo">
+          <img
+              class="sb-logo-right"
+              src="${game.opponentLogo}"
+              alt="${game.opponent}">
 
         </div>
 
         <div class="sb-details">
 
-          <p><strong>Date:</strong> ${game.date} — ${game.time}</p>
-          <p><strong>TV:</strong> ${game.tv}</p>
-          <p><strong>Oregon Record:</strong> ${game.oregonRecord}</p>
-          <p><strong>${game.opponent} Record:</strong> ${game.opponentRecord}</p>
-          <p><strong>FEBU Spread:</strong> ${game.spread}</p>
+          <p>
+            <strong>Date:</strong>
+            ${game.date} — ${game.time}
+          </p>
+
+          <p>
+            <strong>TV:</strong>
+            ${game.tv}
+          </p>
+
+          <p>
+            <strong>Oregon Record:</strong>
+            ${game.oregonRecord}
+          </p>
+
+          <p>
+            <strong>${game.opponent} Record:</strong>
+            ${game.opponentRecord}
+          </p>
+
+          <p>
+            <strong>FEBU Spread:</strong>
+            ${game.spread}
+          </p>
 
           <div class="chaos-meter-container">
 
             <div class="chaos-meter-bar">
-              <div class="chaos-meter-fill" id="chaos-fill"></div>
+              <div class="chaos-meter-fill"
+                   id="chaos-fill"></div>
             </div>
 
-            <div class="chaos-meter-percent" id="chaos-percent">
+            <div class="chaos-meter-percent"
+                 id="chaos-percent">
+
               Chaos Level : 42%
+
             </div>
 
           </div>
@@ -272,112 +275,120 @@ fetch('/assets/data/next-game.json')
         </div>
 
       </div>
+
     `;
 
-    document.getElementById('scoreboard-widget').innerHTML = widget;
-
-    function updateChaosMeter() {
-
-      const fill = document.getElementById("chaos-fill");
-      const percent = document.getElementById("chaos-percent");
-
-      if (!fill || !percent) return;
-
-      const now = new Date();
-
-      const total = kickoff - new Date(
-        kickoff.getFullYear(),
-        kickoff.getMonth(),
-        kickoff.getDate() - 10
-      );
-
-      const remaining = kickoff - now;
-
-      if (remaining <= 0)
-      {
-        fill.style.width = "100%";
-        percent.innerText = "Chaos Level : 100%";
-        fill.classList.add("chaos-flash");
-        return;
-      }
-
-      let chaos =
-        100 -
-        Math.max(
-          0,
-          Math.min(100, (remaining / total) * 100)
-        );
-
-      chaos = Math.round(chaos);
-
-      const displayChaos = Math.max(42, chaos);
-
-      fill.style.width = displayChaos + "%";
-
-      percent.innerText =
-        "Chaos Level : " + displayChaos + "%";
-
-    }
-
-    updateChaosMeter();
+    document.getElementById(
+      'scoreboard-widget'
+    ).innerHTML = widget;
 
     setInterval(() => {
 
       const timer =
-        document.getElementById('kickoff-timer');
+          document.getElementById(
+              'kickoff-timer'
+          );
 
       if(timer)
       {
-        timer.innerText = updateCountdown();
+          timer.innerText =
+              updateCountdown();
       }
 
     }, 60000);
 
-    setInterval(updateChaosMeter, 60000);
-
   });
 
-</script>
+/* ======================
+   STANDINGS WIDGET
+====================== */
 
-<script>
+fetch('/assets/data/standings.json')
+    .then(response => response.json())
+    .then(data => {
 
-const febuAlerts = [
+        let html = `
 
-"🏆 Sco and Kellz are tied for 1st place",
+        <div class="febu-standings-card">
 
-"🎯 AgentPK earned this week's bonus point",
+            <h3>${data.headline}</h3>
 
-"📊 Tyler trails the lead by only 2 points",
+            <div class="standings-note">
+                ${data.subtitle}
+            </div>
 
-"🦆 Ducks offense finally woke up against Illinois",
+        `;
 
-"💬 Chip Kelly or Mike Norvell? FEBU remains divided",
+        data.standings.forEach(player => {
 
-"🎮 Try the FEBU Recruiting Simulator",
+            html += `
 
-"🏈 Ohio State week has arrived",
+            <div class="standings-row">
 
-"🚨 Oregon completed a forward pass and experts are stunned"
+                <span>
+                    ${player.place}. ${player.name}
+                </span>
 
-];
+                <span>
+                    ${player.points}
+                </span>
 
-let currentAlert = 0;
+            </div>
 
-function rotateFEBUAlert()
-{
-    document.getElementById("ticker-text").innerHTML =
-        febuAlerts[currentAlert];
+            `;
 
-    currentAlert++;
+        });
 
-    if(currentAlert >= febuAlerts.length)
-    {
-        currentAlert = 0;
-    }
-}
+        html += `
+        </div>
+        `;
 
-rotateFEBUAlert();
+        document
+            .getElementById(
+                "standings-widget"
+            )
+            .innerHTML = html;
 
-setInterval(rotateFEBUAlert, 5000);
+    });
+
+/* ======================
+   ALERT TICKER
+====================== */
+
+fetch('/assets/data/alerts.json')
+    .then(response => response.json())
+    .then(data => {
+
+        const febuAlerts =
+            data.alerts;
+
+        let currentAlert = 0;
+
+        function rotateFEBUAlert()
+        {
+            document
+                .getElementById(
+                    "ticker-text"
+                )
+                .innerHTML =
+                    febuAlerts[
+                        currentAlert
+                    ];
+
+            currentAlert++;
+
+            if(currentAlert >= febuAlerts.length)
+            {
+                currentAlert = 0;
+            }
+        }
+
+        rotateFEBUAlert();
+
+        setInterval(
+            rotateFEBUAlert,
+            5000
+        );
+    });
 
 </script>
