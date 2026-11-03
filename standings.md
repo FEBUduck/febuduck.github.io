@@ -18,7 +18,7 @@ Here you’ll find:
 Whether you're fighting for the top spot or just trying not to finish last, this is where the story of the season takes shape. Check back every week to see how the madness unfolds.
 
 
-### 2026 SEASON - After week 8
+### 2026 SEASON - After week 9
 
 
 | Name         | Pts | Wins | Losses | Win  %  |
