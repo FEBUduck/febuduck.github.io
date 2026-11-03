@@ -4,39 +4,105 @@ title: FEBU
 subtitle: All Ducks All Day, Everyday.
 ---
 
-<div id="scoreboard-widget"></div>
+<div class="homepage-widgets">
+
+    <div id="scoreboard-widget"></div>
+
+    <div id="standings-widget">
+
+        <div class="febu-standings-card">
+
+            <h3>🏆 FEBU Pick'em</h3>
+
+            <div class="standings-note">
+                Sco tied Kellz this week 🚨
+            </div>
+
+            <div class="standings-row">
+                <span>1. Kellz</span>
+                <span>82</span>
+            </div>
+
+            <div class="standings-row">
+                <span>1. Sco</span>
+                <span>82</span>
+            </div>
+
+            <div class="standings-row">
+                <span>3. Tyler</span>
+                <span>80</span>
+            </div>
+
+            <div class="standings-row">
+                <span>4. AgentPK</span>
+                <span>79</span>
+            </div>
+
+            <div class="standings-row">
+                <span>5. HighFi</span>
+                <span>78</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 <div id="febu-ticker">
-    <span id="ticker-text"></span>
+    <div class="ticker-label">🚨 FEBU ALERT</div>
+    <div class="ticker-message">
+        <span id="ticker-text"></span>
+    </div>
 </div>
 
 <style>
 
 #febu-ticker{
 
+    display:flex;
+
+    align-items:center;
+
     margin:20px auto 30px auto;
 
     max-width:1000px;
 
-    background:#013220;
-
-    color:#FEE123;
-
-    border-left:6px solid #FEE123;
-
-    border-right:6px solid #FEE123;
-
-    padding:12px 20px;
-
     border-radius:8px;
 
-    font-weight:700;
-
-    font-size:18px;
-
-    text-align:center;
+    overflow:hidden;
 
     box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+}
+
+.ticker-label{
+
+    background:#FEE123;
+
+    color:#013220;
+
+    font-weight:800;
+
+    padding:14px 20px;
+
+    white-space:nowrap;
+
+}
+
+.ticker-message{
+
+    flex:1;
+
+    background:#013220;
+
+    color:white;
+
+    padding:14px 20px;
+
+    font-weight:600;
+
+    text-align:left;
 
 }
 
@@ -44,6 +110,88 @@ subtitle: All Ducks All Day, Everyday.
     display:block;
 }
 
+.homepage-widgets{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+
+}
+
+#scoreboard-widget{
+
+    flex:0 0 auto;
+
+}
+
+#standings-widget{
+
+    width:320px;
+
+}
+
+.febu-standings-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+    border-left:6px solid #013220;
+
+    border-right:6px solid #FEE123;
+
+}
+
+.febu-standings-card h3{
+
+    margin-top:0;
+
+    text-align:center;
+
+    color:#013220;
+
+}
+
+.standings-note{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:15px;
+
+    font-size:.9rem;
+
+    font-style:italic;
+
+}
+
+.standings-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #eee;
+
+    font-weight:600;
+
+}
+    
 </style>
 
 <script>
