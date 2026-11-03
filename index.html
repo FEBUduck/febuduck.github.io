@@ -36,6 +36,15 @@ subtitle: All Ducks All Day, Everyday.
 
 }
 
+/* Prevent bottom ticker from covering content */
+
+body{
+
+    padding-bottom:70px;
+
+}
+
+    
 /* Homepage Layout */
 
 .homepage-widgets{
@@ -171,19 +180,25 @@ subtitle: All Ducks All Day, Everyday.
 
 #febu-ticker{
 
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
     display:flex;
 
     align-items:center;
 
-    margin:20px auto 30px auto;
-
-    max-width:1100px;
-
-    border-radius:8px;
+    z-index:9999;
 
     overflow:hidden;
 
-    box-shadow:0 4px 15px rgba(0,0,0,.15);
+      box-shadow:0 -2px 15px rgba(0,0,0,.20);
+
+    margin:0;
 
 }
 
@@ -199,7 +214,26 @@ subtitle: All Ducks All Day, Everyday.
 
     white-space:nowrap;
 
+    animation:pulseAlert 2s infinite;
+
 }
+
+@keyframes pulseAlert{
+
+    0%{
+        box-shadow:0 0 0 rgba(254,225,35,0);
+    }
+
+    50%{
+        box-shadow:0 0 15px rgba(254,225,35,.7);
+    }
+
+    100%{
+        box-shadow:0 0 0 rgba(254,225,35,0);
+    }
+
+}
+
 
 .ticker-message{
 
@@ -214,6 +248,8 @@ subtitle: All Ducks All Day, Everyday.
     font-weight:600;
 
     text-align:left;
+
+    white-space:nowrap;
 
 }
 
@@ -456,7 +492,7 @@ fetch('/assets/data/standings.json')
 
     <div class="standings-footer">
 
-        Tightest Race Of The Season 🏆
+        Chaos Remains On The Menu 🌯
 
     </div>
 
