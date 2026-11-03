@@ -251,18 +251,20 @@ body{
 
     white-space:nowrap;
 
-    animation:scrollTicker 50s linear infinite;
+    padding-left:100%;
+
+    animation:scrollTicker 30s linear infinite;
 
 }
 
-    @keyframes scrollTicker{
+  @keyframes scrollTicker{
 
     from{
-        transform:translateX(100%);
+        transform:translateX(0);
     }
 
     to{
-        transform:translateX(-100%);
+        transform:translateX(-50%);
     }
 
 }
@@ -527,12 +529,17 @@ fetch('/assets/data/alerts.json')
         const febuAlerts =
             data.alerts;
 
-        document
+        const tickerContent =
+    febuAlerts.join(
+        " 🦆 "
+    );
+
+document
     .getElementById("ticker-text")
     .innerHTML =
-    febuAlerts.join(
-        " &nbsp;&nbsp; • &nbsp;&nbsp; "
-    );
+    tickerContent +
+    " 🦆 🦆 🦆 " +
+    tickerContent;
     });
 
 </script>
