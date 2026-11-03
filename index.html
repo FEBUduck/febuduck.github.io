@@ -151,14 +151,6 @@ body{
 
 }
 
-.standings-row:nth-child(3),
-.standings-row:nth-child(4){
-
-    background:rgba(254,225,35,.08);
-
-    font-weight:700;
-
-}
 
 .standings-footer{
 
@@ -247,7 +239,7 @@ body{
 
     font-weight:600;
 
-    text-align:left;
+    overflow:hidden;
 
     white-space:nowrap;
 
@@ -255,7 +247,23 @@ body{
 
 #ticker-text{
 
-    display:block;
+    display:inline-block;
+
+    white-space:nowrap;
+
+    animation:scrollTicker 50s linear infinite;
+
+}
+
+    @keyframes scrollTicker{
+
+    from{
+        transform:translateX(100%);
+    }
+
+    to{
+        transform:translateX(-100%);
+    }
 
 }
 
@@ -519,33 +527,12 @@ fetch('/assets/data/alerts.json')
         const febuAlerts =
             data.alerts;
 
-        let currentAlert = 0;
-
-        function rotateFEBUAlert()
-        {
-            document
-                .getElementById(
-                    "ticker-text"
-                )
-                .innerHTML =
-                    febuAlerts[
-                        currentAlert
-                    ];
-
-            currentAlert++;
-
-            if(currentAlert >= febuAlerts.length)
-            {
-                currentAlert = 0;
-            }
-        }
-
-        rotateFEBUAlert();
-
-        setInterval(
-            rotateFEBUAlert,
-            5000
-        );
+        document
+    .getElementById("ticker-text")
+    .innerHTML =
+    febuAlerts.join(
+        " &nbsp;&nbsp; • &nbsp;&nbsp; "
+    );
     });
 
 </script>
