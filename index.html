@@ -26,56 +26,14 @@ subtitle: All Ducks All Day, Everyday.
 
 <style>
 
-#febu-ticker{
+/* Override Beautiful Jekyll width */
 
-    display:flex;
+.page-content,
+.main-content,
+.container{
 
-    align-items:center;
+    max-width:1400px !important;
 
-    margin:20px auto 30px auto;
-
-    max-width:1000px;
-
-    border-radius:8px;
-
-    overflow:hidden;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.15);
-
-}
-
-.ticker-label{
-
-    background:#FEE123;
-
-    color:#013220;
-
-    font-weight:800;
-
-    padding:14px 20px;
-
-    white-space:nowrap;
-
-}
-
-.ticker-message{
-
-    flex:1;
-
-    background:#013220;
-
-    color:white;
-
-    padding:14px 20px;
-
-    font-weight:600;
-
-    text-align:left;
-
-}
-
-#ticker-text{
-    display:block;
 }
 
 /* Homepage Layout */
@@ -90,27 +48,29 @@ subtitle: All Ducks All Day, Everyday.
 
     gap:25px;
 
-    width:100vw;
-
-    max-width:1400px;
+    max-width:1100px;
 
     margin:0 auto 25px auto;
 
 }
 
+/* Game Widget */
+
 #scoreboard-widget{
 
-    flex:1;
+    width:725px;
 
-    min-width:450px;
+    flex:none;
 
 }
 
+/* Standings Widget */
+
 #standings-widget{
 
-    width:300px;
+    width:325px;
 
-    flex-shrink:0;
+    flex:none;
 
 }
 
@@ -170,6 +130,64 @@ subtitle: All Ducks All Day, Everyday.
 
 }
 
+/* ESPN-Style Alert Bar */
+
+#febu-ticker{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:20px auto 30px auto;
+
+    max-width:1100px;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+}
+
+.ticker-label{
+
+    background:#FEE123;
+
+    color:#013220;
+
+    font-weight:800;
+
+    padding:14px 20px;
+
+    white-space:nowrap;
+
+}
+
+.ticker-message{
+
+    flex:1;
+
+    background:#013220;
+
+    color:white;
+
+    padding:14px 20px;
+
+    font-weight:600;
+
+    text-align:left;
+
+}
+
+#ticker-text{
+
+    display:block;
+
+}
+
+/* Mobile */
+
 @media (max-width: 768px){
 
     .homepage-widgets{
@@ -178,13 +196,23 @@ subtitle: All Ducks All Day, Everyday.
 
         align-items:center;
 
+        max-width:100%;
+
+    }
+
+    #scoreboard-widget{
+
+        width:100%;
+
+        max-width:725px;
+
     }
 
     #standings-widget{
 
         width:100%;
 
-        max-width:500px;
+        max-width:400px;
 
     }
 
@@ -211,7 +239,7 @@ subtitle: All Ducks All Day, Everyday.
     }
 
 }
-    
+
 </style>
 
 <script>
