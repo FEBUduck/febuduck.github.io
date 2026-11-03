@@ -68,9 +68,9 @@ subtitle: All Ducks All Day, Everyday.
 
 #standings-widget{
 
-    width:325px;
+    width:350px;
 
-    flex:none;
+    flex:0 0 350px;
 
 }
 
@@ -84,11 +84,13 @@ subtitle: All Ducks All Day, Everyday.
 
     padding:20px;
 
-    box-shadow:0 4px 15px rgba(0,0,0,.15);
-
     border-left:6px solid #013220;
 
     border-right:6px solid #FEE123;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.15),
+        0 0 12px rgba(1,50,32,.18);
 
     height:100%;
 
@@ -100,9 +102,15 @@ subtitle: All Ducks All Day, Everyday.
 
     margin-top:0;
 
+    margin-bottom:8px;
+
     text-align:center;
 
     color:#013220;
+
+    font-size:2rem;
+
+    font-weight:800;
 
 }
 
@@ -112,7 +120,7 @@ subtitle: All Ducks All Day, Everyday.
 
     color:#666;
 
-    margin-bottom:15px;
+    margin-bottom:20px;
 
     font-size:.9rem;
 
@@ -126,9 +134,34 @@ subtitle: All Ducks All Day, Everyday.
 
     justify-content:space-between;
 
-    padding:10px 0;
+    padding:12px 0;
 
     border-bottom:1px solid #eee;
+
+    font-weight:600;
+
+}
+
+.standings-row:nth-child(3),
+.standings-row:nth-child(4){
+
+    background:rgba(254,225,35,.08);
+
+    font-weight:700;
+
+}
+
+.standings-footer{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    padding-top:15px;
+
+    border-top:1px solid #ddd;
+
+    color:#666;
 
     font-weight:600;
 
@@ -420,8 +453,16 @@ fetch('/assets/data/standings.json')
         });
 
         html += `
-        </div>
-        `;
+
+    <div class="standings-footer">
+
+        Tightest Race Of The Season 🏆
+
+    </div>
+
+</div>
+
+`;
 
         document
             .getElementById(
