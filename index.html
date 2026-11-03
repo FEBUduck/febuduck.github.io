@@ -3,123 +3,233 @@ layout: home
 title: FEBU
 subtitle: All Ducks All Day, Everyday.
 ---
-<div id="scoreboard-widget"></div> 
- 
-<script> 
-fetch('/assets/data/next-game.json') 
-  .then(response => response.json()) 
-  .then(game => { 
- 
-    const kickoff = new Date(game.kickoff + " EDT"); 
- 
-    function updateCountdown() { 
-      const now = new Date(); 
-      const diff = kickoff - now; 
- 
-      if (diff <= 0) { 
-        const timer = document.getElementById('kickoff-timer'); 
- 
-        if (timer) { 
-          timer.classList.add("gameday-flash"); 
-        } 
- 
-        return "GAME DAY!"; 
-      } 
- 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24)); 
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24); 
-      const minutes = Math.floor((diff / (1000 * 60)) % 60); 
- 
-      return `${days}d ${hours}h ${minutes}m`; 
-    } 
- 
-    const widget = ` 
-      <div class="scoreboard-widget"> 
-        <div class="sb-countdown"> 
-          Kickoff in: <span id="kickoff-timer">${updateCountdown()}</span> 
-        </div> 
- 
-        <div class="sb-header-row"> 
-          <img class="sb-logo-left" src="${game.oregonLogo}" alt="Oregon logo"> 
- 
-          <div class="sb-header-center"> 
-            OREGON vs ${game.opponent} 
-          </div> 
- 
-          <img class="sb-logo-right" src="${game.opponentLogo}" alt="${game.opponent} logo"> 
-        </div> 
- 
-        <div class="sb-details"> 
-          <p><strong>Date:</strong> ${game.date} — ${game.time}</p> 
-          <p><strong>TV:</strong> ${game.tv}</p> 
-          <p><strong>Oregon Record:</strong> ${game.oregonRecord}</p> 
-          <p><strong>${game.opponent} Record:</strong> ${game.opponentRecord}</p> 
-          <p><strong>FEBU Spread:</strong> ${game.spread}</p> 
- 
-          <div class="chaos-meter-container"> 
-            <div class="chaos-meter-bar"> 
-              <div class="chaos-meter-fill" id="chaos-fill"></div> 
-            </div> 
- 
-            <div class="chaos-meter-percent" id="chaos-percent"> 
-              Chaos Level : 42% 
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-    `; 
- 
-    document.getElementById('scoreboard-widget').innerHTML = widget; 
- 
-    function updateChaosMeter() { 
-      const fill = document.getElementById("chaos-fill"); 
-      const percent = document.getElementById("chaos-percent"); 
- 
-      if (!fill || !percent) return; 
- 
-      const now = new Date(); 
- 
-      const total = kickoff - new Date( 
-        kickoff.getFullYear(), 
-        kickoff.getMonth(), 
-        kickoff.getDate() - 10 
-      ); 
- 
-      const remaining = kickoff - now; 
- 
-      if (remaining <= 0) { 
-        fill.style.width = "100%"; 
-        percent.innerText = "Chaos Level : 100%"; 
-        fill.classList.add("chaos-flash"); 
-        return; 
-      } 
- 
-      let chaos = 100 - Math.max(0, Math.min(100, (remaining / total) * 100)); 
-      chaos = Math.round(chaos); 
- 
-      const displayChaos = Math.max(42, chaos); 
- 
-      fill.style.width = displayChaos + "%"; 
-      percent.innerText = "Chaos Level : " + displayChaos + "%"; 
- 
-      if (displayChaos >= 100) { 
-        fill.classList.add("chaos-flash"); 
-      } else { 
-        fill.classList.remove("chaos-flash"); 
-      } 
-    } 
- 
-    updateChaosMeter(); 
- 
-    setInterval(() => { 
-      const timer = document.getElementById('kickoff-timer'); 
- 
-      if (timer) { 
-        timer.innerText = updateCountdown(); 
-      } 
-    }, 60000); 
- 
-    setInterval(updateChaosMeter, 60000); 
-  }); 
-</script> 
 
+<div id="scoreboard-widget"></div>
+
+<div id="febu-ticker">
+    <span id="ticker-text"></span>
+</div>
+
+<style>
+
+#febu-ticker{
+
+    margin:20px auto 30px auto;
+
+    max-width:1000px;
+
+    background:#013220;
+
+    color:#FEE123;
+
+    border-left:6px solid #FEE123;
+
+    border-right:6px solid #FEE123;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+    font-size:18px;
+
+    text-align:center;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+}
+
+#ticker-text{
+    display:block;
+}
+
+</style>
+
+<script>
+
+fetch('/assets/data/next-game.json')
+  .then(response => response.json())
+  .then(game => {
+
+    const kickoff = new Date(game.kickoff + " EDT");
+
+    function updateCountdown() {
+
+      const now = new Date();
+      const diff = kickoff - now;
+
+      if (diff <= 0) {
+
+        const timer = document.getElementById('kickoff-timer');
+
+        if (timer) {
+          timer.classList.add("gameday-flash");
+        }
+
+        return "GAME DAY!";
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+      return `${days}d ${hours}h ${minutes}m`;
+    }
+
+    const widget = `
+      <div class="scoreboard-widget">
+
+        <div class="sb-countdown">
+          Kickoff in:
+          <span id="kickoff-timer">${updateCountdown()}</span>
+        </div>
+
+        <div class="sb-header-row">
+
+          <img class="sb-logo-left"
+               src="${game.oregonLogo}"
+               alt="Oregon logo">
+
+          <div class="sb-header-center">
+            OREGON vs ${game.opponent}
+          </div>
+
+          <img class="sb-logo-right"
+               src="${game.opponentLogo}"
+               alt="${game.opponent} logo">
+
+        </div>
+
+        <div class="sb-details">
+
+          <p><strong>Date:</strong> ${game.date} — ${game.time}</p>
+          <p><strong>TV:</strong> ${game.tv}</p>
+          <p><strong>Oregon Record:</strong> ${game.oregonRecord}</p>
+          <p><strong>${game.opponent} Record:</strong> ${game.opponentRecord}</p>
+          <p><strong>FEBU Spread:</strong> ${game.spread}</p>
+
+          <div class="chaos-meter-container">
+
+            <div class="chaos-meter-bar">
+              <div class="chaos-meter-fill" id="chaos-fill"></div>
+            </div>
+
+            <div class="chaos-meter-percent" id="chaos-percent">
+              Chaos Level : 42%
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    `;
+
+    document.getElementById('scoreboard-widget').innerHTML = widget;
+
+    function updateChaosMeter() {
+
+      const fill = document.getElementById("chaos-fill");
+      const percent = document.getElementById("chaos-percent");
+
+      if (!fill || !percent) return;
+
+      const now = new Date();
+
+      const total = kickoff - new Date(
+        kickoff.getFullYear(),
+        kickoff.getMonth(),
+        kickoff.getDate() - 10
+      );
+
+      const remaining = kickoff - now;
+
+      if (remaining <= 0)
+      {
+        fill.style.width = "100%";
+        percent.innerText = "Chaos Level : 100%";
+        fill.classList.add("chaos-flash");
+        return;
+      }
+
+      let chaos =
+        100 -
+        Math.max(
+          0,
+          Math.min(100, (remaining / total) * 100)
+        );
+
+      chaos = Math.round(chaos);
+
+      const displayChaos = Math.max(42, chaos);
+
+      fill.style.width = displayChaos + "%";
+
+      percent.innerText =
+        "Chaos Level : " + displayChaos + "%";
+
+    }
+
+    updateChaosMeter();
+
+    setInterval(() => {
+
+      const timer =
+        document.getElementById('kickoff-timer');
+
+      if(timer)
+      {
+        timer.innerText = updateCountdown();
+      }
+
+    }, 60000);
+
+    setInterval(updateChaosMeter, 60000);
+
+  });
+
+</script>
+
+<script>
+
+const febuAlerts = [
+
+"🏆 Sco and Kellz are tied for 1st place",
+
+"🎯 AgentPK earned this week's bonus point",
+
+"📊 Tyler trails the lead by only 2 points",
+
+"🦆 Ducks offense finally woke up against Illinois",
+
+"💬 Chip Kelly or Mike Norvell? FEBU remains divided",
+
+"🎮 Try the FEBU Recruiting Simulator",
+
+"🏈 Ohio State week has arrived",
+
+"🚨 Oregon completed a forward pass and experts are stunned"
+
+];
+
+let currentAlert = 0;
+
+function rotateFEBUAlert()
+{
+    document.getElementById("ticker-text").innerHTML =
+        febuAlerts[currentAlert];
+
+    currentAlert++;
+
+    if(currentAlert >= febuAlerts.length)
+    {
+        currentAlert = 0;
+    }
+}
+
+rotateFEBUAlert();
+
+setInterval(rotateFEBUAlert, 5000);
+
+</script>
