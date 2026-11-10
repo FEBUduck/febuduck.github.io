@@ -1,31 +1,31 @@
 {
   "headline": "🏆 Race for 1st Place",
-  "subtitle": "Sco tied Kellz after a 7-2 week",
+  "subtitle": "Talesofderp rises to tie for #2",
   "standings": [
     {
       "place": "1",
-      "name": "Kellz",
-      "points": 74
-    },
-    {
-      "place": "1",
       "name": "Sco",
-      "points": 74
+      "points": 78
     },
     {
-      "place": "3",
-      "name": "Tyler",
-      "points": 72
+      "place": "2",
+      "name": "Kellz",
+      "points": 76
+    },
+    {
+      "place": "2",
+      "name": "Talesofderp",
+      "points": 76
     },
     {
       "place": "4",
       "name": "Lil Jev",
-      "points": 71
+      "points": 75
     },
     {
       "place": "5",
-      "name": "Talesofderp",
-      "points": 70
+      "name": "HigFi",
+      "points": 74
     }
   ]
 }
