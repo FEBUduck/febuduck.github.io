@@ -1,31 +1,31 @@
 {
   "headline": "🏆 Race for 1st Place",
-  "subtitle": "Talesofderp rises to tie for #2",
+  "subtitle": "Sco hangs on Jev jumps",
   "standings": [
     {
       "place": "1",
       "name": "Sco",
-      "points": 78
+      "points": 85
     },
     {
       "place": "2",
       "name": "Kellz",
-      "points": 76
+      "points": 84
     },
     {
       "place": "2",
-      "name": "Talesofderp",
-      "points": 76
+      "name": "Lil Jev",
+      "points": 84
     },
     {
       "place": "4",
-      "name": "Lil Jev",
-      "points": 75
+      "name": "talesofderp",
+      "points": 83
     },
     {
       "place": "5",
       "name": "HigFi",
-      "points": 74
+      "points": 82
     }
   ]
 }
