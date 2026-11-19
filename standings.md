@@ -20,15 +20,13 @@ Whether you're fighting for the top spot or just trying not to finish last, this
 
 ### 2026 SEASON - After week 10
 
-| Name         | Pts | Wins | Losses | Win % |
-|--------------|-----|------|--------|-------|
-| Sco*         | 78  | 77   | 23     | 77%   |
-| Kellz*       | 76  | 75   | 26     | 74%   |
-| talesofderp* | 76  | 75   | 26     | 74%   |
-| Lil Jev      | 75  | 75   | 25     | 75%   |
-| HighFi       | 74  | 74   | 27     | 73%   |
-| AgentPK*     | 73  | 72   | 29     | 71%   |
-| Tyler**      | 72  | 70   | 23     | 75%   |
-| Juicy Booty* | 48  | 47   | 14     | 77%   |
-| Doug         | 2   | 2    | 1      | 67%   |
-
+| Name         | Pts | Wins | Losses | Win  %  |
+|--------------|-----|------|--------|---------|
+| Sco*         | 85  | 84   | 25     | 77%     |
+| Kellz**      | 84  | 82   | 28     | 75%     |
+| Lil Jev      | 84  | 84   | 25     | 77%     |
+| talesofderp* | 83  | 82   | 28     | 75%     |
+| HighFi       | 82  | 82   | 28     | 75%     |
+| AgentPK*     | 81  | 80   | 30     | 73%     |
+| Tyler**      | 78  | 76   | 25     | 75%     |
+| Juicy Booty* | 48  | 47   | 14     | 77%     |
