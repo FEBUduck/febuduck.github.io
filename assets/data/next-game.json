@@ -1,12 +1,12 @@
 {
-  "kickoff": "2026-11-20 20:00:00",
-  "opponent": "Michigan State",
-  "opponentLogo": "/assets/logos/michiganst.png",
+  "kickoff": "2026-11-28 19:30:00",
+  "opponent": "Washington",
+  "opponentLogo": "/assets/logos/uw.png",
   "oregonLogo": "/assets/logos/oregon.png",
-  "date": "Friday, Nov 20",
-  "time": "8:00 PM EST",
-  "tv": "FOX",
-  "oregonRecord": "7–3",
-  "opponentRecord": "3–7",
-  "spread": "Oregon - 16.5"
+  "date": "Saturday, Nov 28",
+  "time": "7:30 PM EST",
+  "tv": "NBC / Peacock",
+  "oregonRecord": "8–3",
+  "opponentRecord": "7–4",
+  "spread": "Oregon - 14"
 }
