@@ -335,7 +335,7 @@ fetch('/assets/data/next-game.json')
   .then(response => response.json())
   .then(game => {
 
-    const kickoff = new Date(game.kickoff + " EDT");
+    const kickoff = new Date(game.kickoff + " EST");
 
     function updateCountdown() {
 
