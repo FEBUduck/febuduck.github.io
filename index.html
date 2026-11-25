@@ -338,54 +338,64 @@ fetch('/assets/data/next-game.json')
     const kickoff = new Date(game.kickoff + " EST");
 
     function updateCountdown() {
-
       const now = new Date();
       const diff = kickoff - now;
 
-      if (diff <= 0)
-      {
+      if (diff <= 0) {
         return "GAME DAY!";
       }
 
-      const days =
-          Math.floor(diff / (1000 * 60 * 60 * 24));
-
-      const hours =
-          Math.floor((diff / (1000 * 60 * 60)) % 24);
-
-      const minutes =
-          Math.floor((diff / (1000 * 60)) % 60);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
 
       return `${days}d ${hours}h ${minutes}m`;
     }
 
-    const widget = `
+    function getChaosLevel() {
+      const now = new Date();
+      const diff = kickoff - now;
 
+      if (diff <= 0) {
+        return 100;
+      }
+
+      const oneWeekMs = 7 * 24 * 60 * 60 * 1000;
+
+      const progress = 1 - (diff / oneWeekMs);
+
+      let chaos = 42 + (progress * 58);
+
+      chaos = Math.max(42, Math.min(100, chaos));
+
+      return chaos;
+    }
+
+    const initialChaos = getChaosLevel();
+
+    const widget = `
       <div class="scoreboard-widget">
 
         <div class="sb-countdown">
           Kickoff in:
-          <span id="kickoff-timer">
-            ${updateCountdown()}
-          </span>
+          <span id="kickoff-timer">${updateCountdown()}</span>
         </div>
 
         <div class="sb-header-row">
 
           <img
-              class="sb-logo-left"
-              src="${game.oregonLogo}"
-              alt="Oregon">
+            class="sb-logo-left"
+            src="${game.oregonLogo}"
+            alt="Oregon">
 
           <div class="sb-header-center">
             OREGON vs ${game.opponent}
           </div>
 
           <img
-              class="sb-logo-right"
-              src="${game.opponentLogo}"
-              alt="${game.opponent}">
-
+            class="sb-logo-right"
+            src="${game.opponentLogo}"
+            alt="${game.opponent}">
         </div>
 
         <div class="sb-details">
@@ -418,15 +428,17 @@ fetch('/assets/data/next-game.json')
           <div class="chaos-meter-container">
 
             <div class="chaos-meter-bar">
-              <div class="chaos-meter-fill"
-                   id="chaos-fill"></div>
+              <div
+                class="chaos-meter-fill"
+                id="chaos-fill"
+                style="width:${initialChaos}%;">
+              </div>
             </div>
 
-            <div class="chaos-meter-percent"
-                 id="chaos-percent">
-
-              Chaos Level : 42%
-
+            <div
+              class="chaos-meter-percent"
+              id="chaos-percent">
+              Chaos Level: ${initialChaos.toFixed(1)}%
             </div>
 
           </div>
@@ -434,30 +446,66 @@ fetch('/assets/data/next-game.json')
         </div>
 
       </div>
-
     `;
 
-    document.getElementById(
-      'scoreboard-widget'
-    ).innerHTML = widget;
+    document.getElementById('scoreboard-widget').innerHTML =
+      widget;
 
-    setInterval(() => {
+    function updateWidget() {
 
       const timer =
-          document.getElementById(
-              'kickoff-timer'
-          );
+        document.getElementById('kickoff-timer');
 
-      if(timer)
-      {
-          timer.innerText =
-              updateCountdown();
+      if (timer) {
+        timer.textContent =
+          updateCountdown();
       }
 
-    }, 60000);
+      const chaos =
+        getChaosLevel();
 
+      const fill =
+        document.getElementById('chaos-fill');
+
+      const percent =
+        document.getElementById('chaos-percent');
+
+      if (fill) {
+
+        fill.style.width =
+          `${chaos}%`;
+
+        if (chaos < 60) {
+          fill.style.background =
+            '#32cd32';
+        }
+        else if (chaos < 80) {
+          fill.style.background =
+            '#ffcc00';
+        }
+        else {
+          fill.style.background =
+            '#ff3333';
+        }
+      }
+
+      if (percent) {
+        percent.textContent =
+          `Chaos Level: ${chaos.toFixed(1)}%`;
+      }
+    }
+
+    updateWidget();
+
+    setInterval(updateWidget, 1000);
+
+  })
+  .catch(error => {
+    console.error(
+      'Error loading game widget:',
+      error
+    );
   });
-
 /* ======================
    STANDINGS WIDGET
 ====================== */
